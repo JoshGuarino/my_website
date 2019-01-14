@@ -4,22 +4,14 @@
     <div data-aos="fade-left"  data-aos-duration="" id="main" class="container">
         <div class="row">
             <div id="title" class="col-sm-12 center-block text-center">
-                <h2>Hi, I'm <span id="name">Josh Guarino</span>,</h2><br>
-                <h2>I'm a Software Engineer and IT professional!</h2>
+                <h2>{{ message }}</h2>
             </div>
         </div>
         <br><br>
         <div class="row">
             <div class="col-sm-1"></div>
-            <div id="clock" class="col-sm-10 center-block text-center"></div>
+            <div id="error" class="col-sm-10 center-block text-center">{{ the_error }}</div>
             <div class="col-sm-1"></div>
         </div>
     </div>
 {% endblock %}
-{% block scripts %}
-    <script>
-        $(function() {
-            $('#icon_home').addClass("active_page");
-        });
-    </script>
-{% endblock scripts %}

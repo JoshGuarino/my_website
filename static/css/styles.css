@@ -24,19 +24,23 @@ body{
 
 a{
     color: whitesmoke;
+    outline: none;
 }
 
 a:hover{
     color: whitesmoke;
     text-decoration: none;
+    outline: none;
     
 }
 .active_page{
     color: #233237;
+    outline: none;
 }
 .active_page:hover{
     color: #233237;
     text-decoration: none;
+    outline: none;
 }
 
 h1{
@@ -72,6 +76,15 @@ h3{
 #texture{
     z-index: -1;
 
+}
+
+#error{
+    background-color: #984b43;
+    color: #233237;
+    border: whitesmoke 2px solid;
+    opacity: .7;
+    border-radius: 10px;
+    font-size: 75px;
 }
 
 #particles-js {
