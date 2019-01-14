@@ -1,4 +1,3 @@
-//nav functionality
 $("#page_link_home").mouseover(function(){
     $('#icon_home').removeClass("fa fa-home fa-2x");
     $('#icon_home').html('<br>Home');
