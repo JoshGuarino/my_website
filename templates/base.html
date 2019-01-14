@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if title %}
+    <title>Josh Guarino - {{ title }}</title>
+    {% else %}
+    <title>Josh Guarino</title>
+    {% endif %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <!-- <link rel="icon" href="images/icon.png"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<Body onload="startClock();">
+
+    <div id="particles-js"></div>
+    <div id="nav" data-aos="fade-right" data-aos-duration="">
+        <nav>
+            <a href="/" onclick=""><h1 id='logo'>JG</h1></a>
+            <br><br>
+            <span class="align-middle">
+                    <div id="page_link_home" class="nav_item text-center">
+                            <a href="/" onclick=""><span id="icon_home" class="fa fa-home fa-2x"></span></a>
+                            <br>
+                    </div>
+                    <br>
+                    <div id="page_link_about" class="nav_item text-center">
+                            <a href="/about" onclick=""><span id="icon_about" class="fa fa-user fa-2x"></span></a>
+                            <br>
+                    </div>
+                    <br>
+                    <div id="page_link_skills" class="nav_item text-center">
+                            <a href="/skills" onclick=""><span id="icon_skills" class="fa fa-cogs fa-2x"></span></a>
+                            <br>
+                    </div>
+                    <br>
+                    <div id="page_link_contact" class="nav_item text-center">
+                            <a href="/contact" onclick=""><span id="icon_contact" class="fa fa-envelope fa-2x"></span></a>
+                            <br><br>
+                    </div>
+            </span>
+            <br><br><br>
+            <div class="nav_item">
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>
+            <div class="nav_item">
+                <a href="#" class="fa fa-reddit"></a>
+            </div>
+            <div class="nav_item">
+                <a href="#" class="fa fa-github"></a>
+            </div>
+            <div class="nav_item">
+                <a href="#" class="fa fa-google"></a>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+            {% block content %}{% endblock %}
+    </div>
+        
+    
+
+    <script src="/static/js/particles.js"></script>
+    <script src="/static/js/particles_config.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="/static/js/nav.js"></script>
+    <script src="/static/js/datetime.js"></script>
+    {% block scripts %}{% endblock scripts %}
+</Body>
+
+
+</html>
