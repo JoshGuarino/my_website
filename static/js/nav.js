@@ -1,33 +1,30 @@
 $("#page_link_home").mouseover(function(){
-    $('#icon_home').removeClass("fa fa-home fa-2x");
-    $('#icon_home').html('<br>Home');
+    $('#icon_home').toggle();
+    $('#text_home').toggle();
 }).mouseout(function(){
-    $('#icon_home').html("");
-    $('#icon_home').addClass("fa fa-home fa-2x");
+    $('#icon_home').toggle();
+    $('#text_home').toggle();
 });
-
 $("#page_link_about").mouseover(function(){
-    $('#icon_about').removeClass("fa fa-user fa-2x");
-    $('#icon_about').html('<br>About');
+    $('#icon_about').toggle();
+    $('#text_about').toggle();
 }).mouseout(function(){
-    $('#icon_about').html("");
-    $('#icon_about').addClass("fa fa-user fa-2x");
+    $('#icon_about').toggle();
+    $('#text_about').toggle();
 });
 
 $("#page_link_skills").mouseover(function(){
-    $('#icon_skills').removeClass("fa fa-cogs fa-2x");
-    $('#icon_skills').html('<br>Skills');
+    $('#icon_skills').toggle();
+    $('#text_skills').toggle();
 }).mouseout(function(){
-    $('#icon_skills').html("");
-    $('#icon_skills').addClass("fa fa-cogs fa-2x");
+    $('#icon_skills').toggle();
+    $('#text_skills').toggle();
 });
 
 $("#page_link_contact").mouseover(function(){
-    $('#icon_contact').removeClass("fa fa-envelope fa-2x");
-    $('#icon_contact').html('<br>Contact');
+    $('#icon_contact').toggle();
+    $('#text_contact').toggle();
 }).mouseout(function(){
-    $('#icon_contact').html("");
-    $('#icon_contact').addClass("fa fa-envelope fa-2x");
+    $('#icon_contact').toggle();
+    $('#text_contact').toggle();
 });
-
-  
