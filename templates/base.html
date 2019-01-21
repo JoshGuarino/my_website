@@ -19,10 +19,43 @@
 <Body onload="startClock();">
 
     <div id="particles-js"></div>
-    <div id="nav" data-aos="fade-right" data-aos-duration="">
+    <div id="nav" data-aos="fade-down" data-aos-duration="">
 
-        <nav>
-            <a href="/" onclick=""><h1 id='logo'>JG</h1></a>
+        <nav class="row">
+            <span class="col-lg-4">
+                    <a href="/" onclick=""><h1 class="text-center" id='logo'>JG</h1></a>
+            </span>
+            <span id="page_link_home" class="nav_item text-center col-lg-1">
+                    <a href="/" onclick=""><span id="icon_home" class="fa fa-home fa-2x"></span><span id="text_home" style="display: none;"><br>Home</span></a>
+            </span>
+            <span id="page_link_about" class="nav_item text-center col-lg-1">
+                    <a href="/about" onclick=""><span id="icon_about" class="fa fa-user fa-2x"></span><span id="text_about" style="display: none;"><br>About</span></a>
+            </span>
+            <span id="page_link_skills" class="nav_item text-center col-lg-1">
+                    <a href="/skills" onclick=""><span id="icon_skills" class="fa fa-cogs fa-2x"></span><span id="text_skills" style="display: none;"><br>Skills</span></a>
+            </span>
+            <span id="page_link_contact" class="nav_item text-center col-lg-1">
+                    <a href="/contact" onclick=""><span id="icon_contact" class="fa fa-envelope fa-2x"></span><span id="text_contact" style="display: none;"><br>Contact</span></a>
+            </span>
+
+            <span class="col-lg-4 text-center">
+                <span class="nav_item">
+                    <a href="#" class="fa fa-linkedin"></a>
+                </span>
+                <span class="nav_item">
+                    <a href="#" class="fa fa-reddit"></a>
+                </span>
+                <span class="nav_item">
+                    <a href="#" class="fa fa-github"></a>
+                </span>
+                <span class="nav_item">
+                    <a href="#" class="fa fa-google"></a>
+                </span>
+            </span>
+            
+
+
+            <!-- <a href="/" onclick=""><h1 id='logo'>JG</h1></a>
             <br><br>
             <span class="align-middle">
                     <div id="page_link_home" class="nav_item text-center">
@@ -57,7 +90,9 @@
             </div>
             <div class="nav_item">
                 <a href="#" class="fa fa-google"></a>
-            </div>
+            </div> -->
+
+            
         </nav>
     </div>
     <div class="container">
