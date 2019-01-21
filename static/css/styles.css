@@ -7,6 +7,7 @@ body{
     font-family: 'Ubuntu', sans-serif;
     background-size: cover;
     z-index: 0;
+    overflow-x: hidden;
 }
 
 nav{
@@ -16,6 +17,7 @@ nav{
     border-bottom:whitesmoke solid 3px;
     padding: .5vw;
     opacity: .7;
+    margin-bottom: 15vh;
 }
 
 a{ color: whitesmoke; outline: none; }
@@ -29,7 +31,10 @@ h3{ width: 25vw; color: #9E5A63; font-size: 10vw; }
 
 #logo{ background-color: #233237; border-radius: 10%; border: 2px solid whitesmoke; opacity: 1; width: 75px;}
 #name{ font-size: 70px; color: #9E5A63; }
-#title{ padding: 15vh; }
+#josh{ height: 400px; width: 400px; border-radius: 10px; border: whitesmoke 2px solid;}
+#title{ padding-bottom: 20px; }
+#para{ font-size: 20px; }
+#rowspace{ padding-bottom: 200px; }
 
 #error{
     background-color: #984b43;
@@ -80,3 +85,5 @@ h3{ width: 25vw; color: #9E5A63; font-size: 10vw; }
 .fa-user{ border:none }
 .fa-cogs{ border:none }
 .fa-envelope{ border:none }
+
+/* div{ border: solid blue 5px } */
