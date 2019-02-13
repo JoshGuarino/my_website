@@ -15,7 +15,7 @@
             <div class="card-body">
                 <h5 class="card-title">Programming Languages</h5>
                 <p class="card-text">Some quick example text.</p>
-                <a href="#" id="btn" class="btn btn-default" data-toggle="modal" data-target="#exampleModal">Find out more</a>
+                <a href="#" id="btn" class="btn btn-default" data-toggle="modal" data-target="#Modal">Find out more</a>
             </div>
         </div>
     </div>
@@ -26,7 +26,7 @@
             <div class="card-body">
                 <h5 class="card-title">Frameworks & Libraries</h5>
                 <p class="card-text">Some quick example text.</p>
-                <a href="#" id="btn"class="btn btn-default" data-toggle="modal" data-target="#exampleModal">Find out more</a>
+                <a href="#" id="btn"class="btn btn-default" data-toggle="modal" data-target="#Modal">Find out more</a>
             </div>
         </div>
     </div>
@@ -37,7 +37,7 @@
             <div class="card-body">
                 <h5 class="card-title">Package Managers</h5>
                 <p class="card-text">Some quick example text.</p>
-                <a href="#" id="btn" class="btn btn-default" data-toggle="modal" data-target="#exampleModal">Find out more</a>
+                <a href="#" id="btn" class="btn btn-default" data-toggle="modal" data-target="#Modal">Find out more</a>
             </div>
         </div>
     </div>
@@ -52,7 +52,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Database Software</h5>
                     <p class="card-text">Some quick example text.</p>
-                    <a href="#"  id="btn" class="btn btn-default" data-toggle="modal" data-target="#exampleModal">Find out more</a>
+                    <a href="#"  id="btn" class="btn btn-default" data-toggle="modal" data-target="#Modal">Find out more</a>
                 </div>
             </div>
         </div>
@@ -63,7 +63,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Version Control w/ GIT</h5>
                     <p class="card-text">Some quick example text.</p>
-                    <a href="#" id="btn" class="btn btn-default" data-toggle="modal" data-target="#exampleModal">Find out more</a>
+                    <a href="#" id="btn" class="btn btn-default" data-toggle="modal" data-target="#Modal">Find out more</a>
                 </div>
             </div>
         </div>
@@ -74,7 +74,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Software Testing/QA</h5>
                     <p class="card-text">Some quick example text.</p>
-                    <a href="#" id="btn" class="btn btn-default" data-toggle="modal" data-target="#exampleModal">Find out more</a>
+                    <a href="#" id="btn" class="btn btn-default" data-toggle="modal" data-target="#Modal">Find out more</a>
                 </div>
             </div>
         </div>
@@ -83,22 +83,18 @@
 </div>
 
 <!-- modal for skill expand -->
-<div class="modal fade" id="exampleModal" tabindex="-1">
+<div class="modal fade" id="Modal" tabindex="-1">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <div class="modal-body">
-            <p>Modal body text goes here.</p>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
+            <div class="modal-header">
+                <h5 class="modal-title text-center"></h5>
+            </div>
+            <div class="modal-body">
+                <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btn" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
         </div>
     </div>
 </div>
