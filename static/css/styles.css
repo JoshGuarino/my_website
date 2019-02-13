@@ -27,14 +27,18 @@ a:hover{ color: whitesmoke; text-decoration: none; outline: none; }
 
 h1{ color: whitesmoke; font-size: 55px; }
 h2{ font-size: 40px;}
-h3{ width: 25vw; color: #9E5A63; font-size: 10vw; }
+h3{ width: 25vw; color: #984b43; font-size: 10vw; }
+h5{ color: whitesmoke; }
 
-#logo{ background-color: #233237; border-radius: 10%; border: 2px solid whitesmoke; opacity: 1; width: 75px;}
-#name{ font-size: 70px; color: #9E5A63; }
-#josh{ height: 400px; width: 400px; border-radius: 10px; border: whitesmoke 2px solid;}
-#title{ padding-bottom: 20px; }
-#para{ font-size: 20px; }
+.card{ min-width: 200px; color: #233237; background-color: #984b43; border: solid 2px whitesmoke; opacity: .8; }
+
+#logo{ background-color: #233237; border-radius: 10%; border: 2px solid whitesmoke; opacity: 1; width: 75px; }
+#name{ font-size: 70px; color: #984b43; }
+#josh{ height: 400px; width: 400px; border-radius: 10px; border: whitesmoke 2px solid; opacity: .8; }
+#title{ padding-bottom: 20px; opacity: .8;}
+#para{ font-size: 20px; opacity: .8;}
 #rowspace{ padding-bottom: 200px; }
+#btn{ background-color: #233237; }
 
 #error{
     background-color: #984b43;
@@ -60,7 +64,7 @@ h3{ width: 25vw; color: #9E5A63; font-size: 10vw; }
     background-color: #984b43;
     color: #233237;
     border: whitesmoke 2px solid;
-    opacity: .7;
+    opacity: .8;
     border-radius: 10px;
 }
 
