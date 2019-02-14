@@ -11,33 +11,33 @@
     <div class="col-lg-2"></div>
     <div class="col-lg-2 text-center" data-aos="flip-up" data-aos-duration="700">
         <div class="card">
-            <img class="card-img-top" src="" alt="">
+            <img class="card-img-top" src="/static/images/programming-languages.jpg" alt="">
             <div class="card-body">
                 <h5 class="card-title">Programming Languages</h5>
-                <p class="card-text">Some quick example text.</p>
-                <a href="#" id="btn" class="btn btn-default" data-toggle="modal" data-target="#Modal">Find out more</a>
+                <p class="card-text"></p>
+                <a href="#" id="btn" class="btn btn-default" data-toggle="modal" data-target="#Modal" onclick="populateModal(0);">Find out more</a>
             </div>
         </div>
     </div>
     <div class="col-lg-1"></div>
     <div class="col-lg-2 text-center" data-aos="flip-up" data-aos-duration="700">
         <div class="card">
-            <img class="card-img-top" src="" alt="">
+            <img class="card-img-top" src="/static/images/fl.jpg" alt="">
             <div class="card-body">
                 <h5 class="card-title">Frameworks & Libraries</h5>
-                <p class="card-text">Some quick example text.</p>
-                <a href="#" id="btn"class="btn btn-default" data-toggle="modal" data-target="#Modal">Find out more</a>
+                <p class="card-text"></p>
+                <a href="#" id="btn"class="btn btn-default" data-toggle="modal" data-target="#Modal" onclick="populateModal(1);">Find out more</a>
             </div>
         </div>
     </div>
     <div class="col-lg-1"></div>
     <div class="col-lg-2 text-center" data-aos="flip-up" data-aos-duration="700">
         <div class="card">
-            <img class="card-img-top" src="" alt="">
+            <img class="card-img-top" src="/static/images/package-managers.png" alt="">
             <div class="card-body">
                 <h5 class="card-title">Package Managers</h5>
-                <p class="card-text">Some quick example text.</p>
-                <a href="#" id="btn" class="btn btn-default" data-toggle="modal" data-target="#Modal">Find out more</a>
+                <p class="card-text"></p>
+                <a href="#" id="btn" class="btn btn-default" data-toggle="modal" data-target="#Modal" onclick="populateModal(2);">Find out more</a>
             </div>
         </div>
     </div>
@@ -48,33 +48,33 @@
         <div class="col-lg-2"></div>
         <div class="col-lg-2 text-center" data-aos="flip-up" data-aos-duration="700">
             <div class="card">
-                <img class="card-img-top" src="" alt="">
+                <img class="card-img-top" src="/static/images/db.jpg" alt="">
                 <div class="card-body">
                     <h5 class="card-title">Database Software</h5>
-                    <p class="card-text">Some quick example text.</p>
-                    <a href="#"  id="btn" class="btn btn-default" data-toggle="modal" data-target="#Modal">Find out more</a>
+                    <p class="card-text"></p>
+                    <a href="#"  id="btn" class="btn btn-default" data-toggle="modal" data-target="#Modal" onclick="populateModal(3);">Find out more</a>
                 </div>
             </div>
         </div>
         <div class="col-lg-1"></div>
         <div class="col-lg-2 text-center" data-aos="flip-up" data-aos-duration="700">
             <div class="card">
-                <img class="card-img-top" src="" alt="">
+                <img class="card-img-top" src="/static/images/git.png" alt="">
                 <div class="card-body">
                     <h5 class="card-title">Version Control w/ GIT</h5>
-                    <p class="card-text">Some quick example text.</p>
-                    <a href="#" id="btn" class="btn btn-default" data-toggle="modal" data-target="#Modal">Find out more</a>
+                    <p class="card-text"></p>
+                    <a href="#" id="btn" class="btn btn-default" data-toggle="modal" data-target="#Modal" onclick="populateModal(4);">Find out more</a>
                 </div>
             </div>
         </div>
         <div class="col-lg-1"></div>
         <div class="col-lg-2 text-center" data-aos="flip-up" data-aos-duration="700">
             <div class="card">
-                <img class="card-img-top" src="" alt="">
+                <img class="card-img-top" src="/static/images/st.png" alt="">
                 <div class="card-body">
                     <h5 class="card-title">Software Testing/QA</h5>
-                    <p class="card-text">Some quick example text.</p>
-                    <a href="#" id="btn" class="btn btn-default" data-toggle="modal" data-target="#Modal">Find out more</a>
+                    <p class="card-text"></p>
+                    <a href="#" id="btn" class="btn btn-default" data-toggle="modal" data-target="#Modal" onclick="populateModal(5);">Find out more</a>
                 </div>
             </div>
         </div>
@@ -87,10 +87,10 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title text-center"></h5>
+                <h5 class="modal-title text-center" id="m_title"></h5>
             </div>
             <div class="modal-body">
-                <p>Modal body text goes here.</p>
+                <p id="m_content"></p>
             </div>
             <div class="modal-footer">
                 <button type="button" id="btn" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -100,6 +100,7 @@
 </div>
 {% endblock %}
 {% block scripts %}
+    <script src="/static/js/skills.js"></script>
     <script>
         $(function() {
             $('#icon_skills').addClass("active_page");
