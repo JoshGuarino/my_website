@@ -1,13 +1,13 @@
-function getDateTime(){
-    var date = new Date();
-    var hour =  date.getHours();
-    var min =  date.getMinutes();
-    var sec = date.getSeconds();
-    var session = "AM";
-    var month = date.getMonth()
-    var weekday = date.getDay();
-    var day = date.getDate();
-    var year = date.getFullYear();
+const getDateTime = () => {
+    let date = new Date();
+    let hour =  date.getHours();
+    let min =  date.getMinutes();
+    let sec = date.getSeconds();
+    let session = "AM";
+    let month = date.getMonth()
+    let weekday = date.getDay();
+    let day = date.getDate();
+    let year = date.getFullYear();
 
     if(hour == 0){
         hour = 12;
@@ -103,9 +103,9 @@ function getDateTime(){
     }
 
     document.getElementById('clock').innerHTML = '<h2 id="time">' + hour + ':' + min + ':' + sec + ' ' + session + '<br>' + weekday + ', ' + month + ' ' + day + ', ' + year +'</h2>';
-}
+};
 
-function startClock(){
+const startClock = () => {
     getDateTime();
     setInterval(function(){ getDateTime(); }, 1000);
-}
+};
