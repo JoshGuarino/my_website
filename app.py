@@ -1,6 +1,10 @@
 from flask import Flask, render_template
+from forms import ContactForm
+from key_gen import generate_key
+
 app = Flask(__name__)
 
+app.secret_key = generate_key()
 
 @app.route("/")
 @app.route("/index")
