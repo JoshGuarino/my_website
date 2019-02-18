@@ -23,7 +23,7 @@ def skills():
 def contact():
     form = ContactForm()
     if request.method == 'POST':
-        return 'Form posted.'
+        return render_template('submit.html', title="Contact", msg="Sucessfully posted form!!!")
     elif request.method == 'GET':
         return render_template('contact.html', title="Contact", form=form)
 

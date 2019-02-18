@@ -1,6 +1,6 @@
+import random
 
 def generate_key():
-    import random
     key = ''
     key_len = 50
     spec_char = ['~', '!', '@', '#', '$', '%', '^', '&', '*', '<', '>', '?', '/']
