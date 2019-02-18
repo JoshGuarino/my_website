@@ -21,6 +21,39 @@ nav{
     margin-bottom: 100px;
 }
 
+label{ font-size: 20px; }
+form{ border: whitesmoke 5px solid; border-radius: 10px; background-color: #984b43;}
+input{ 
+    width: 400px;
+    height: 40px; 
+    background-color: #233237; 
+    font-size: 15px;
+    color: whitesmoke;
+    border-radius: 7px;
+    border: #233237 2px solid;
+}
+input:hover{ border: whitesmoke 2px solid; }
+input:focus{ border: whitesmoke 2px solid; }
+form textarea#message{
+    width: 400px;
+    height: 100px;
+    background-color: #233237; 
+    font-size: 15px;
+    color: whitesmoke;
+    border-radius: 7px;
+    border: #233237 2px solid;
+}
+form textarea#message:hover{ border: whitesmoke 2px solid; }
+form textarea#message:focus{ border: whitesmoke 2px solid; }
+form input#submit{ 
+    width: 100px; 
+    background-color: #233237;  
+    border: #233237 2px solid; 
+    color: whitesmoke; 
+    border-radius: 7px; 
+}
+form input#submit:hover{ border: whitesmoke 2px solid; }  
+
 a{ color: whitesmoke; outline: none; }
 a:hover{ color: whitesmoke; text-decoration: none; outline: none; }
 .active_page{color: #233237; outline: none;}
@@ -35,7 +68,7 @@ h5{ color: whitesmoke; }
 
 #logo{ background-color: #233237; border-radius: 10%; opacity: 1; width: 75px; border: 2px solid #233237;}
 #logo:hover{ border: 2px solid whitesmoke; }
-#name{ font-size: 70px; color: #984b43; }
+#name_title{ font-size: 70px; color: #984b43; }
 #josh{ height: 400px; width: 400px; border-radius: 10px; border: whitesmoke 2px solid; opacity: .8; }
 #title{ padding-bottom: 20px; opacity: .8;}
 #para{ font-size: 20px; opacity: .8;}

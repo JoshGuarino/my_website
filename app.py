@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from forms import ContactForm
 from config import Config
 
@@ -19,9 +19,13 @@ def about():
 def skills():
     return render_template('skills.html', title="Skills")
 
-@app.route("/contact")
+@app.route("/contact", methods=['GET','POST'])
 def contact():
-    return render_template('contact.html', title="Contact")
+    form = ContactForm()
+    if request.method == 'POST':
+        return 'Form posted.'
+    elif request.method == 'GET':
+        return render_template('contact.html', title="Contact", form=form)
 
 @app.errorhandler(404)
 def page_not_found(e):
