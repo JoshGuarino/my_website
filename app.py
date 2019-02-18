@@ -1,10 +1,10 @@
 from flask import Flask, render_template
 from forms import ContactForm
-from key_gen import generate_key
+from config import Config
 
 app = Flask(__name__)
 
-app.secret_key = generate_key()
+app.config.from_object(Config)
 
 @app.route("/")
 @app.route("/index")
@@ -34,5 +34,5 @@ def internal_server_error(e):
 
 
 if __name__ == '__main__':
-    app.run(debug=True, threaded=True)
+    app.run()
 

@@ -2,8 +2,8 @@
 def generate_key():
     import random
     key = ''
-    key_len = random.randint(11, 22)
-    spec_char = ['~', '!', '@', '#', '$', '%', '^', '&', '*', '<', '>', '?']
+    key_len = 50
+    spec_char = ['~', '!', '@', '#', '$', '%', '^', '&', '*', '<', '>', '?', '/']
     alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'] 
     alphabet_upper = []
     for i in range(len(alphabet)):
