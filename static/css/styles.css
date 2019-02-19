@@ -22,7 +22,7 @@ nav{
 }
 
 label{ font-size: 20px; }
-form{ border: whitesmoke 5px solid; border-radius: 10px; background-color: #984b43;}
+form{ border: whitesmoke 3px solid; border-radius: 10px; background-color: #984b43; opacity: .8; }
 input{ 
     width: 400px;
     height: 40px; 
@@ -66,17 +66,17 @@ h5{ color: whitesmoke; }
 
 .card{ color: #233237; background-color: #984b43; border: solid 2px whitesmoke; opacity: .8; }
 
-#logo{ background-color: #233237; border-radius: 10%; opacity: 1; width: 75px; border: 2px solid #233237;}
+#logo{ background-color: #233237; border-radius: 10%; opacity: 1; width: 75px; border: 2px solid #233237; }
 #logo:hover{ border: 2px solid whitesmoke; }
 #name_title{ font-size: 70px; color: #984b43; }
 #josh{ height: 400px; width: 400px; border-radius: 10px; border: whitesmoke 2px solid; opacity: .8; }
 #title{ padding-bottom: 20px; opacity: .8;}
 #para{ font-size: 20px; opacity: .8;}
 #rowspace{ padding-bottom: 200px; }
-#btn{ background-color: #233237;  border: #233237 2px solid; color: whitesmoke;}
+#btn{ background-color: #233237;  border: #233237 2px solid; color: whitesmoke; }
 #btn:hover{ border: whitesmoke 2px solid; }
 
-.modal-content{ background-color: #984b43; border: whitesmoke solid 2px;}
+.modal-content{ background-color: #984b43; border: whitesmoke solid 2px; }
 .modal-body{ background-color: #233237; }
 
 #error{
@@ -101,7 +101,7 @@ h5{ color: whitesmoke; }
 
 #clock{
     background-color: #984b43;
-    color: #233237;
+    color: whitesmoke;
     border: whitesmoke 2px solid;
     opacity: .8;
     border-radius: 10px;
