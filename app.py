@@ -1,10 +1,12 @@
 from flask import Flask, render_template, request, flash
 from forms import ContactForm
-from config import Config
+from flask_mail import Mail, Message
+from config import Config, get_config
 
 app = Flask(__name__)
-
+get_config()
 app.config.from_object(Config)
+mail = Mail(app)
 
 @app.route("/")
 @app.route("/index")
@@ -27,6 +29,13 @@ def contact():
             flash('All fields are required.')
             return render_template('contact.html', form=form, title="Contact")
         else:
+            msg = Message('Hello', sender=app.config["MAIL_USERNAME"], recipients=[app.config['MAIL_RECIEVE']])
+            msg.body = """
+            From: %s <%s>
+            %s
+            """ % (form.name.data, form.email.data, form.message.data)
+            #mail.send(msg)
+            print(msg)
             return render_template('submit.html', title="Contact", msg="Thank you for your message.  I will get back to you as soon as possible.")
     elif request.method == 'GET':
         return render_template('contact.html', title="Contact", form=form)

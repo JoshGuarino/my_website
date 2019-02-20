@@ -79,7 +79,8 @@ h5{ color: whitesmoke; }
 #btn{ background-color: #233237;  border: #233237 2px solid; color: whitesmoke; }
 #btn:hover{ border: whitesmoke 2px solid; }
 
-.modal-content{ background-color: #984b43; opacity: .9;}
+.modal-content{ background-color: #984b43; opacity: .9; border: 2px solid #233237 ; }
+.modal-content:hover{ border: 2px solid whitesmoke; }
 .modal-body{ background-color: #233237; }
 .modal-header{ border-bottom: none; }
 .modal-footer{ border-top: none; }
