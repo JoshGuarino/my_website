@@ -16,15 +16,22 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<Body onload="startClock();">
+
+{% if title %}
+<body onload="startClock('not_home');">
+{% else %}
+<body onload="startClock('home');">
+{% endif %}
+
+
 
 <div id="particles-js"></div>
 <div id="nav" data-aos="fade-down" data-aos-duration="700">
     <nav class="row">
-        <div class="col-lg-2">
+        <div class="col-lg-1">
                 <h1 class="text-center" id='logo'><a href="/">JG</a></h1>
         </div>
-        <div class="col-lg-2"></div>
+        <div id="nav_clock" class="col-lg-3 text-center center-block"></div>
         <div id="page_link_home" class="nav_item text-center col-lg-1">
                 <a href="/"><span id="icon_home" class="fa fa-home fa-2x"></span><span id="text_home" style="display: none;"><br>Home</span></a>
         </div>
@@ -38,7 +45,7 @@
                 <a href="/contact"><span id="icon_contact" class="fa fa-envelope fa-2x"></span><span id="text_contact" style="display: none;"><br>Contact</span></a>
         </div>
         
-        <div class="col-lg-4 text-right">
+        <div class="col-lg-4 text-center">
             <span class="nav_item">
                 <a href="https://www.linkedin.com/in/josh-guarino/" target="_blank" class="fa fa-linkedin"></a>
             </span>
@@ -70,7 +77,7 @@
 
 {% block scripts %}{% endblock scripts %}
 
-</Body>
+</body>
 
 
 </html>

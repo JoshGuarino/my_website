@@ -1,4 +1,4 @@
-const getDateTime = () => {
+const getDateTime = (param) => {
     let date = new Date();
     let hour =  date.getHours();
     let min =  date.getMinutes();
@@ -102,10 +102,16 @@ const getDateTime = () => {
         break;
     }
 
-    document.getElementById('clock').innerHTML = '<h2 id="time">' + hour + ':' + min + ':' + sec + ' ' + session + '<br>' + weekday + ', ' + month + ' ' + day + ', ' + year +'</h2>';
+    if(param ==="home"){
+        document.getElementById('clock').innerHTML = '<h2 id="time">' + hour + ':' + min + ':' + sec + ' ' + session + '<br>' + weekday + ', ' + month + ' ' + day + ', ' + year +'</h2>';
+        document.getElementById('nav_clock').innerHTML = hour + ':' + min + ':' + sec + ' ' + session;
+    }
+    else if(param === "not_home"){
+        document.getElementById('nav_clock').innerHTML = hour + ':' + min + ':' + sec + ' ' + session;
+    }
 };
 
-const startClock = () => {
-    getDateTime();
-    setInterval(function(){ getDateTime(); }, 1000);
+const startClock = (param) => {
+    getDateTime(param);
+    setInterval(function(){ getDateTime(param); }, 1000);
 };

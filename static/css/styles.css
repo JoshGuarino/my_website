@@ -27,7 +27,7 @@ form{ border: #984b43 3px solid; border-radius: 10px; background-color: #984b43;
 form:hover{ border: whitesmoke 3px solid; }
 input{ 
     width: 400px;
-    height: 40px; 
+    height: 30px; 
     background-color: #233237; 
     font-size: 15px;
     color: whitesmoke;
@@ -66,33 +66,34 @@ h2{ font-size: 40px;}
 h3{ width: 25vw; color: #984b43; font-size: 10vw; }
 h5{ color: whitesmoke; }
 
-.card{ color: #233237; background-color: #984b43; border: solid 2px #984b43; opacity: .8; }
+.card{ color: #233237; background-color: #984b43; border: solid 2px #233237; opacity: .8; }
 .card:hover{ border: solid 2px whitesmoke; }
 
 #logo{ background-color: #233237; border-radius: 10%; opacity: 1; width: 75px; border: 2px solid #233237; }
 #logo:hover{ border: 2px solid whitesmoke; }
 #name_title{ font-size: 70px; color: #984b43; }
-#josh{ height: 400px; width: 400px; border-radius: 10px; border: whitesmoke 3px solid; opacity: .8; }
+#josh{ height: 400px; width: 400px; border-radius: 10px; border: #233237 3px solid; opacity: .8; }
+#josh:hover{ border: whitesmoke 3px solid; opacity: .8; }
 #title{ padding-bottom: 20px; opacity: .8;}
 #para{ font-size: 20px; opacity: .8;}
 #rowspace{ padding-bottom: 200px; }
 #btn{ background-color: #233237;  border: #233237 2px solid; color: whitesmoke; }
 #btn:hover{ border: whitesmoke 2px solid; }
 
-.modal-content{ background-color: #984b43; border: #984b43 solid 2px; opacity: .9;}
-.modal-content:hover{ border: whitesmoke solid 2px; }
+.modal-content{ background-color: #984b43; opacity: .9;}
 .modal-body{ background-color: #233237; }
 .modal-header{ border-bottom: none; }
 .modal-footer{ border-top: none; }
 
 #error{
     background-color: #984b43;
-    color: #233237;
-    border: whitesmoke 2px solid;
+    color: whitesmoke;
+    border: #233237 3px solid;
     opacity: .7;
     border-radius: 10px;
     font-size: 75px;
 }
+#error:hover{ border: whitesmoke 3px solid; }
 
 #particles-js {
     position: absolute;
@@ -113,6 +114,7 @@ h5{ color: whitesmoke; }
     border-radius: 10px;
 }
 #clock:hover{ border: whitesmoke 3px solid; }
+#nav_clock{ font-size: 45px; }
 
 #time{ font-size: 50px; }
 
@@ -145,3 +147,7 @@ h5{ color: whitesmoke; }
     opacity: .8;
   }
   .flash:hover{ border: solid 2px whitesmoke; }
+
+  .mapouter{ text-align: right; height: 500px; width: 500px;}
+  .gmap_canvas{ overflow: hidden; background: none!important; height: 500px; width: 500px; border-radius: 10px; border: solid 3px #233237; }
+  .gmap_canvas:hover{ border: solid 3px whitesmoke; } 
