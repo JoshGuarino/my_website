@@ -72,8 +72,7 @@ h5{ color: whitesmoke; }
 #logo{ background-color: #233237; border-radius: 10%; opacity: 1; width: 75px; border: 2px solid #233237; }
 #logo:hover{ border: 2px solid whitesmoke; }
 #name_title{ font-size: 70px; color: #984b43; }
-#josh{ height: 400px; width: 400px; border-radius: 10px; border: #233237 3px solid; opacity: .8; }
-#josh:hover{ border: whitesmoke 3px solid; opacity: .8; }
+#josh{ height: 500px; width: 700px; }
 #title{ padding-bottom: 20px; opacity: .8;}
 #para{ font-size: 20px; opacity: .8;}
 #rowspace{ padding-bottom: 200px; }
@@ -127,27 +126,25 @@ h5{ color: whitesmoke; }
     margin: 5px 2px;
     border-radius: 10%;
   }
-.fa:hover{ color: currentColor; border: whitesmoke 2px solid;}
-.fa-linkedin{ background: #007bb5; border: #007bb5 2px solid;}
-.fa-github{ background-color:#333; border: #333 2px solid;}
-.fa-google{ background: #dd4b39; border: #dd4b39 2px solid;}
-.fa-reddit{ background: #ff5700; border: #ff5700 2px solid;}
+.fa:hover{ color: currentColor; border: whitesmoke 2px solid; }
+.fa-linkedin{ background: #007bb5; border: #007bb5 2px solid; }
+.fa-github{ background-color:#333; border: #333 2px solid; }
+.fa-google{ background: #dd4b39; border: #dd4b39 2px solid; }
+.fa-reddit{ background: #ff5700; border: #ff5700 2px solid; }
 .fa-home{ border:none }
 .fa-user{ border:none }
 .fa-cogs{ border:none }
 .fa-envelope{ border:none }
 
-.flash {
-    background-color: #984b43;
-    padding: 10px;
-    width: 200px;
-    color: whitesmoke;
-    border-radius: 5px;
-    border: solid 2px #984b43;
-    opacity: .8;
-  }
-  .flash:hover{ border: solid 2px whitesmoke; }
+.flash { background-color: #984b43; padding: 10px; width: 200px; color: whitesmoke; border-radius: 5px; border: solid 2px #984b43; opacity: .8; }
+.flash:hover{ border: solid 2px whitesmoke; }
 
-  .mapouter{ text-align: right; height: 500px; width: 500px;}
-  .gmap_canvas{ overflow: hidden; background: none!important; height: 500px; width: 500px; border-radius: 10px; border: solid 3px #233237; }
-  .gmap_canvas:hover{ border: solid 3px whitesmoke; } 
+.mapouter{ text-align: right; height: 500px; width: 500px;}
+.gmap_canvas{ overflow: hidden; background: none!important; height: 500px; width: 500px; border-radius: 10px; border: solid 3px #233237; }
+.gmap_canvas:hover{ border: solid 3px whitesmoke; } 
+
+#music{ border-radius: 5px; border: solid 2px #233237;}
+#music:hover{ border: solid 2px whitesmoke; }
+
+#carousel{ background-color: #984b43; border: solid 3px #233237; border-radius: 10px; overflow: hidden; }
+#carousel:hover{ border: solid 3px whitesmoke; }
