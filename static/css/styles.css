@@ -26,7 +26,7 @@ label{ font-size: 20px; }
 form{ border: #984b43 3px solid; border-radius: 10px; background-color: #984b43; opacity: .8; }
 form:hover{ border: whitesmoke 3px solid; }
 input{ 
-    width: 400px;
+    width: 300px;
     height: 30px; 
     background-color: #233237; 
     font-size: 15px;
@@ -37,7 +37,7 @@ input{
 input:hover{ border: whitesmoke 2px solid; }
 input:focus{ border: whitesmoke 2px solid; }
 form textarea#message{
-    width: 400px;
+    width: 300px;
     height: 100px;
     background-color: #233237; 
     font-size: 15px;
@@ -72,7 +72,7 @@ h5{ color: whitesmoke; }
 #logo{ background-color: #233237; border-radius: 10%; opacity: 1; width: 75px; border: 2px solid #233237; }
 #logo:hover{ border: 2px solid whitesmoke; }
 #name_title{ font-size: 70px; color: #984b43; }
-#josh{ height: 500px; width: 700px; }
+#josh{ height: 400px; width: 600px; }
 #title{ padding-bottom: 20px; opacity: .8;}
 #para{ font-size: 20px; opacity: .8;}
 #rowspace{ padding-bottom: 200px; }
@@ -137,15 +137,15 @@ h5{ color: whitesmoke; }
 .fa-cogs{ border:none }
 .fa-envelope{ border:none }
 
-.flash { background-color: #984b43; padding: 10px; width: 200px; color: whitesmoke; border-radius: 5px; border: solid 2px #984b43; opacity: .8; }
+.flash { background-color: #984b43; padding: 10px; width: 175px; color: whitesmoke; border-radius: 5px; border: solid 2px #984b43; opacity: .8; }
 .flash:hover{ border: solid 2px whitesmoke; }
 
-.mapouter{ text-align: right; height: 500px; width: 500px;}
-.gmap_canvas{ overflow: hidden; background: none!important; height: 500px; width: 500px; border-radius: 10px; border: solid 3px #233237; }
+.mapouter{ text-align: right; height: 400px; width: 400px;}
+.gmap_canvas{ overflow: hidden; background: none!important; height: 400px; width: 400px; border-radius: 10px; border: solid 3px #233237; }
 .gmap_canvas:hover{ border: solid 3px whitesmoke; } 
 
 #music{ border-radius: 5px; border: solid 2px #233237;}
 #music:hover{ border: solid 2px whitesmoke; }
 
-#carousel{ background-color: #984b43; border: solid 3px #233237; border-radius: 10px; overflow: hidden; }
+#carousel{ background-color: #984b43; border: solid 3px #233237; border-radius: 10px; overflow: hidden;}
 #carousel:hover{ border: solid 3px whitesmoke; }
