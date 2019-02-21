@@ -34,8 +34,7 @@ def contact():
             From: %s <%s>
             %s
             """ % (form.name.data, form.email.data, form.message.data)
-            #mail.send(msg)
-            print(msg)
+            mail.send(msg)
             return render_template('submit.html', title="Contact", msg="Thank you for your message.  I will get back to you as soon as possible.")
     elif request.method == 'GET':
         return render_template('contact.html', title="Contact", form=form)

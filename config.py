@@ -5,7 +5,7 @@ class Config(object):
     SECRET_KEY = generate_key()
     DEBUG = True 
     THREADED = True
-    MAIL_SERVER = "smtp.gmail.com"
+    MAIL_SERVER = ""
     MAIL_PORT = 465
     MAIL_USE_SSL = True
     MAIL_USERNAME = ''
@@ -18,3 +18,4 @@ def get_config():
     Config.MAIL_USERNAME = conf['email']
     Config.MAIL_PASSWORD = conf['password']
     Config.MAIL_RECIEVE = conf['r_email']
+    Config.MAIL_SERVER = conf['serv']
