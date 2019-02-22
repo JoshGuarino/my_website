@@ -29,7 +29,7 @@ def contact():
             flash('All fields are required.')
             return render_template('contact.html', form=form, title="Contact")
         else:
-            msg = Message('Hello', sender=app.config["MAIL_USERNAME"], recipients=[app.config['MAIL_RECIEVE']])
+            msg = Message(form.subject.data, sender=app.config["MAIL_USERNAME"], recipients=[app.config['MAIL_RECIEVE']])
             msg.body = """
             From: %s <%s>
             %s
