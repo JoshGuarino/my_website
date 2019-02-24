@@ -35,8 +35,8 @@ input{
     border: #233237 2px solid;
     outline: none;
 }
-input:hover{ border: whitesmoke 2px solid; }
-input:focus{ border: whitesmoke 2px solid; }
+input:hover{ border: whitesmoke 2px solid; outline: none; }
+input:focus{ border: whitesmoke 2px solid; outline: none; }
 form textarea#message{
     width: 300px;
     height: 100px;
@@ -47,16 +47,17 @@ form textarea#message{
     border: #233237 2px solid;
     outline: none;
 }
-form textarea#message:hover{ border: whitesmoke 2px solid; }
-form textarea#message:focus{ border: whitesmoke 2px solid; }
+form textarea#message:hover{ border: whitesmoke 2px solid; outline: none; }
+form textarea#message:focus{ border: whitesmoke 2px solid; outline: none; }
 form input#submit{ 
     width: 100px; 
     background-color: #233237;  
     border: #233237 2px solid; 
     color: whitesmoke; 
     border-radius: 7px; 
+    outline: none;
 }
-form input#submit:hover{ border: whitesmoke 2px solid; }  
+form input#submit:hover{ border: whitesmoke 2px solid; outline: none; }  
 
 a{ color: whitesmoke; outline: none; }
 a:hover{ color: whitesmoke; text-decoration: none; outline: none; }
