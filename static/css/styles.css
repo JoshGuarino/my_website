@@ -33,6 +33,7 @@ input{
     color: whitesmoke;
     border-radius: 7px;
     border: #233237 2px solid;
+    outline: none;
 }
 input:hover{ border: whitesmoke 2px solid; }
 input:focus{ border: whitesmoke 2px solid; }
@@ -44,6 +45,7 @@ form textarea#message{
     color: whitesmoke;
     border-radius: 7px;
     border: #233237 2px solid;
+    outline: none;
 }
 form textarea#message:hover{ border: whitesmoke 2px solid; }
 form textarea#message:focus{ border: whitesmoke 2px solid; }
