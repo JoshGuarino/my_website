@@ -1,6 +1,6 @@
 const data = [{section: "Programming Languages", content: ["C/C++", "Python", "Javascript(node.js)", "PHP", "HTML", "CSS"], 
-               info: "I am proficient in the languages I have listed, with python and JS being what I have the higest skill level in. I am in the process of learning C# and java."}, 
-              {section: "Frameworks & Libraries", content: ["Bootstrap", "JQuery", "react.js", "Vue.js", "express.js", "Flask", "Django", "Laravel"], 
+               info: "I am proficient in the languages I have listed, with python and JS being what I have the higest skill level in. I am in the process of learning C#, java, and GO."}, 
+              {section: "Frameworks & Libraries", content: ["Bootstrap", "Materialize", "JQuery", "react.js", "Vue.js", "express.js", "Flask", "Django", "Laravel"], 
                info: "These are the frameoworks I have used or are proficient in. This site is being built using Flask, Bootstrap, JQuery, and Jinga2. I am also learning the .NET framework and improving my vue and react skills."}, 
               {section: "Package Managers", content: ["npm", "pip", "composer"], 
                info: "These are the package mangers I have used the most. NPM for javascript, PIP for python, and composer for PHP. "}, 

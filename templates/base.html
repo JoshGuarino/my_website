@@ -11,6 +11,7 @@
     {% endif %}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="/static/css/mobile.css">
     <link rel="icon" href="/static/images/icon.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
@@ -56,6 +57,35 @@
                 <a href="/contact" class="fa fa-google"></a>
             </span>
         </div>
+    </nav>
+</div>
+
+<div class="container-fluid" id="mobile_nav">
+    <nav class="row">
+        <div class="col-sm-4">
+            <h2 class="text-center" id='logo'><a href="/">JG</a></h2>
+        </div>
+        <div class="col-sm-4">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                <i class="fa fa-file"></i>
+            </a>
+            <div class="dropdown-menu" >
+                    <a class="dropdown-item" href="/">Home</a>
+                    <a class="dropdown-item" href="/about">About</a>
+                    <a class="dropdown-item" href="/skills">Skills</a>
+                    <a class="dropdown-item" href="/contact">Contact</a>
+            </div>
+        </div>   
+        <div class="col-sm-4">    
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                <i class="fa fa-external-link"></i>
+            </a>
+            <div class="dropdown-menu">
+                    <a class="dropdown-item" target="_blank" href="https://www.linkedin.com/in/josh-guarino/">Linkedin</a>
+                    <a class="dropdown-item" target="_blank" href="https://github.com/JoshGuarino">Github</a>
+                    <a class="dropdown-item" href="/contact">Email</a>
+            </div>
+        </div>    
     </nav>
 </div>
 
