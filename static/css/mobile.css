@@ -1,6 +1,6 @@
 @media (max-width: 1200px){
     #nav{ display: none; }
-    #mobile_nav{ display: block; }
+    #mobile_nav{ display: block; z-index: 1000; opacity: .9;}
     .fa{
         padding: 0px;
         font-size: 25px;
@@ -11,11 +11,18 @@
       }
     .fa:hover{ color: #233237; border: none; }
     #navbarDropdown:hover{ color: #233237; }
-    nav{ padding: 0px; padding-top: 10px; margin-bottom: 125px;}
-    .dropdown-menu{ background-color: #984b43; border: solid 2px #984b43;}
+    nav{ padding: 0px; padding-top: 10px; margin-bottom: 10px; z-index: 1000; opacity: .9; }
+    .dropdown-menu{ background-color: #984b43; border: solid 2px #984b43; }
     .dropdown-menu:hover{ border: solid 2px whitesmoke; }
     .dropdown-item{ color: whitesmoke; }
     .dropdown-item:hover{ background-color: #233237; color: whitesmoke; }
+    h2{ font-size: 25px; }
+    #name_title{ font-size: 30px; }
+    #rowspace{ padding-bottom: 50px; }
+    #time{ font-size: 30px; }
+    #josh{ height: 200px; width: 300px; }
+    #para{ font-size: 12.5px; }
+    #music{ height: 200px; width: 200px; }
 }
 
 @media (min-width: 1200px){
@@ -23,3 +30,10 @@
     #mobile_nav{ display: none; }
 }
 
+@media (max-width: 600px){
+    /* h2{ font-size: 15px; } */
+    /* #name_title{ font-size: 25px; } */
+    nav{ margin-bottom: 25px; }
+    #rowspace{ padding-bottom: 50px; }
+    #josh{ height: 150px; width: 227px; }
+}
