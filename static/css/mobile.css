@@ -1,0 +1,62 @@
+@media (max-width: 1200px){
+    #nav{ display: none; }
+    #mobile_nav{ display: block; z-index: 1000; opacity: .9;}
+    .fa{
+        padding: 0px;
+        font-size: 25px;
+        text-align: center;
+        text-decoration: none;
+        width: 15px;
+        margin: 0px;
+      }
+    .fa:hover{ color: #233237; border: none; }
+    #navbarDropdown:hover{ color: #233237; }
+    nav{ padding: 0px; padding-top: 10px; margin-bottom: 10px; z-index: 1000; opacity: .9; }
+    .dropdown-menu{ background-color: #984b43; border: solid 2px #984b43; }
+    .dropdown-menu:hover{ border: solid 2px whitesmoke; }
+    .dropdown-item{ color: whitesmoke; }
+    .dropdown-item:hover{ background-color: #233237; color: whitesmoke; }
+    h2{ font-size: 25px; }
+    h4{ font-size: 20px; }
+    h5{ font-size: 15px; }
+    #name_title{ font-size: 30px; }
+    #rowspace{ padding-bottom: 50px; }
+    #time{ font-size: 30px; }
+    #josh{ height: 200px; width: 300px; }
+    #para{ font-size: 12.5px; }
+    #music{ height: 200px; width: 200px; }
+    .card{ width: 150px; }
+    #btn{ width: 100px; font-size: 12.5px; }
+    #check{ width: 300px; height: 300px; }
+    form input#submit{ width: 150px; }
+    form textarea#message{ width: 150px;}
+    input{ width: 150px; }
+    .mapouter{ text-align: right; height: 250px; width: 250px;}
+    .gmap_canvas{ overflow: hidden; background: none!important; height: 250px; width: 250px; border-radius: 10px; border: solid 3px #233237; }
+    .flash { width: 125px; }
+
+}
+
+@media (min-width: 1200px){
+    #nav{ display: block; }
+    #mobile_nav{ display: none; }
+}
+
+@media (max-width: 575px){
+    nav{ margin-bottom: 25px; }
+    #rowspace{ padding-bottom: 50px; }
+    #josh{ height: 150px; width: 227px; }
+    .card{ width: 200px; }
+    #btn{ width: 150px; font-size: 15px; }
+    h5{ font-size: 20px; }
+    .mapouter{ height: 300px; width: 300px;}
+    .gmap_canvas{ height: 300px; width: 300px; }
+    .flash { width: 200px; }
+}
+
+@media (max-width: 800px) and (min-width: 575px) {
+    .card{ width: 150px; }
+    .mapouter{ height: 200px; width: 200px;}
+    .gmap_canvas{ height: 200px; width: 200px; }
+    .flash { width: 100px; }
+}

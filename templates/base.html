@@ -11,6 +11,7 @@
     {% endif %}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="/static/css/mobile.css">
     <link rel="icon" href="/static/images/icon.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
@@ -28,24 +29,24 @@
 <div id="particles-js"></div>
 <div id="nav" data-aos="fade-down" data-aos-duration="700">
     <nav class="row">
-        <div class="col-lg-1">
+        <div class="col-sm-1">
                 <h1 class="text-center" id='logo'><a href="/">JG</a></h1>
         </div>
-        <div id="nav_clock" class="col-lg-3 text-center center-block"></div>
-        <div id="page_link_home" class="nav_item text-center col-lg-1">
+        <div id="nav_clock" class="col-sm-3 text-center center-block"></div>
+        <div id="page_link_home" class="nav_item text-center col-sm-1">
                 <a href="/"><span id="icon_home" class="fa fa-home fa-2x"></span><span id="text_home" style="display: none;"><br>Home</span></a>
         </div>
-        <div id="page_link_about" class="nav_item text-center col-lg-1">
+        <div id="page_link_about" class="nav_item text-center col-sm-1">
                 <a href="/about"><span id="icon_about" class="fa fa-user fa-2x"></span><span id="text_about" style="display: none;"><br>About</span></a>
         </div>
-        <div id="page_link_skills" class="nav_item text-center col-lg-1">
+        <div id="page_link_skills" class="nav_item text-center col-sm-1">
                 <a href="/skills"><span id="icon_skills" class="fa fa-cogs fa-2x"></span><span id="text_skills" style="display: none;"><br>Skills</span></a>
         </div>
-        <div id="page_link_contact" class="nav_item text-center col-lg-1">
+        <div id="page_link_contact" class="nav_item text-center col-sm-1">
                 <a href="/contact"><span id="icon_contact" class="fa fa-envelope fa-2x"></span><span id="text_contact" style="display: none;"><br>Contact</span></a>
         </div>
         
-        <div class="col-lg-4 text-center">
+        <div class="col-sm-4 text-center">
             <span class="nav_item">
                 <a href="https://www.linkedin.com/in/josh-guarino/" target="_blank" class="fa fa-linkedin"></a>
             </span>
@@ -56,6 +57,35 @@
                 <a href="/contact" class="fa fa-google"></a>
             </span>
         </div>
+    </nav>
+</div>
+
+<div class="container-fluid" id="mobile_nav" data-aos="fade-down" data-aos-duration="700">
+    <nav class="row">
+        <div class="col-sm-4">
+            <h2 class="text-center" id='logo'><a href="/">JG</a></h2>
+        </div>
+        <div class="col-sm-4">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                <i class="fa fa-file"></i>
+            </a>
+            <div class="dropdown-menu" >
+                    <a class="dropdown-item" href="/">Home</a>
+                    <a class="dropdown-item" href="/about">About</a>
+                    <a class="dropdown-item" href="/skills">Skills</a>
+                    <a class="dropdown-item" href="/contact">Contact</a>
+            </div>
+        </div>   
+        <div class="col-sm-4">    
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                <i class="fa fa-external-link"></i>
+            </a>
+            <div class="dropdown-menu">
+                    <a class="dropdown-item" target="_blank" href="https://www.linkedin.com/in/josh-guarino/">Linkedin</a>
+                    <a class="dropdown-item" target="_blank" href="https://github.com/JoshGuarino">Github</a>
+                    <a class="dropdown-item" href="/contact">Email</a>
+            </div>
+        </div>    
     </nav>
 </div>
 
