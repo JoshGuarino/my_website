@@ -1,4 +1,3 @@
-
 body{
     background-color: #233237;
     margin: 0;
@@ -7,8 +6,9 @@ body{
     font-family: 'Ubuntu', sans-serif;
     background-size: cover;
     z-index: 0;
-    overflow-x: hidden;
     margin-bottom: 10vh;
+    position: relative;
+    overflow: visible;
 }
 
 nav{
@@ -25,10 +25,10 @@ nav:hover{ border-bottom:whitesmoke solid 3px; }
 label{ font-size: 20px; }
 form{ border: #984b43 3px solid; border-radius: 10px; background-color: #984b43; opacity: .8; }
 form:hover{ border: whitesmoke 3px solid; }
-input{ 
+input{
     width: 300px;
-    height: 30px; 
-    background-color: #233237; 
+    height: 30px;
+    background-color: #233237;
     font-size: 15px;
     color: whitesmoke;
     border-radius: 7px;
@@ -40,7 +40,7 @@ input:focus{ border: whitesmoke 2px solid; outline: none; }
 form textarea#message{
     width: 300px;
     height: 100px;
-    background-color: #233237; 
+    background-color: #233237;
     font-size: 15px;
     color: whitesmoke;
     border-radius: 7px;
@@ -49,15 +49,15 @@ form textarea#message{
 }
 form textarea#message:hover{ border: whitesmoke 2px solid; outline: none; }
 form textarea#message:focus{ border: whitesmoke 2px solid; outline: none; }
-form input#submit{ 
-    width: 100px; 
-    background-color: #233237;  
-    border: #233237 2px solid; 
-    color: whitesmoke; 
-    border-radius: 7px; 
+form input#submit{
+    width: 100px;
+    background-color: #233237;
+    border: #233237 2px solid;
+    color: whitesmoke;
+    border-radius: 7px;
     outline: none;
 }
-form input#submit:hover{ border: whitesmoke 2px solid; outline: none; }  
+form input#submit:hover{ border: whitesmoke 2px solid; outline: none; }
 
 a{ color: whitesmoke; outline: none; }
 a:hover{ color: whitesmoke; text-decoration: none; outline: none; }
@@ -146,11 +146,11 @@ h5{ color: whitesmoke; }
 .flash:hover{ border: solid 2px whitesmoke; }
 
 .mapouter{ text-align: right; height: 400px; width: 400px;}
-.gmap_canvas{ overflow: hidden; background: none!important; height: 400px; width: 400px; border-radius: 10px; border: solid 3px #233237; }
-.gmap_canvas:hover{ border: solid 3px whitesmoke; } 
+.gmap_canvas{ background: none!important; height: 400px; width: 400px; border-radius: 10px; border: solid 3px #233237; }
+.gmap_canvas:hover{ border: solid 3px whitesmoke; }
 
 #music{ border-radius: 5px; border: solid 2px #233237;}
 #music:hover{ border: solid 2px whitesmoke; }
 
-#carousel{ background-color: #984b43; border: solid 3px #233237; border-radius: 10px; overflow: hidden;}
+#carousel{ background-color: #984b43; border: solid 3px #233237; border-radius: 10px;}
 #carousel:hover{ border: solid 3px whitesmoke; }

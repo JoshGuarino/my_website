@@ -1,6 +1,6 @@
 @media (max-width: 1200px){
     #nav{ display: none; }
-    #mobile_nav{ display: block; z-index: 1000; opacity: .9;}
+    #mobile_nav{ display: block; z-index: 10000 !important; opacity: .9; position: relative; }
     .fa{
         padding: 0px;
         font-size: 25px;
@@ -11,10 +11,10 @@
       }
     .fa:hover{ color: #233237; border: none; }
     #navbarDropdown:hover{ color: #233237; }
-    nav{ padding: 0px; padding-top: 10px; margin-bottom: 10px; z-index: 1000; opacity: .9; }
-    .dropdown-menu{ background-color: #984b43; border: solid 2px #984b43; }
+    nav{ padding: 0px; padding-top: 10px; margin-bottom: 10px; z-index: 100000 !important; opacity: .9; position: relative;}
+    .dropdown-menu{ background-color: #984b43; border: solid 2px #984b43; z-index: 100000 !important; }
     .dropdown-menu:hover{ border: solid 2px whitesmoke; }
-    .dropdown-item{ color: whitesmoke; }
+    .dropdown-item{ color: whitesmoke; z-index: 100000 !important; }
     .dropdown-item:hover{ background-color: #233237; color: whitesmoke; }
     h2{ font-size: 25px; }
     h4{ font-size: 20px; }
