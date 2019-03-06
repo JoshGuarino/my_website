@@ -146,8 +146,9 @@ h5{ color: whitesmoke; }
 .flash:hover{ border: solid 2px whitesmoke; }
 
 .mapouter{ text-align: right; height: 400px; width: 400px;}
-.gmap_canvas{ background: none!important; height: 400px; width: 400px; border-radius: 10px; border: solid 3px #233237; }
-.gmap_canvas:hover{ border: solid 3px whitesmoke; }
+.gmap_canvas{ height: 400px; width: 400px; border-radius: 10px;} 
+#gmap_canvas{ height: 400px; width: 400px; border-radius: 10px; border: solid 3px #233237;}
+#gmap_canvas:hover{ border: solid 3px whitesmoke; }
 
 #music{ border-radius: 5px; border: solid 2px #233237;}
 #music:hover{ border: solid 2px whitesmoke; }

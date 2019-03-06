@@ -32,7 +32,8 @@
     form textarea#message{ width: 150px;}
     input{ width: 150px; }
     .mapouter{ text-align: right; height: 250px; width: 250px;}
-    .gmap_canvas{ overflow: hidden; background: none!important; height: 250px; width: 250px; border-radius: 10px; border: solid 3px #233237; }
+    #gmap_canvas{ height: 250px; width: 250px; }
+    .gmap_canvas{ height: 250px; width: 250px; }
     .flash { width: 125px; }
 
 }
@@ -51,6 +52,7 @@
     h5{ font-size: 20px; }
     .mapouter{ height: 300px; width: 300px;}
     .gmap_canvas{ height: 300px; width: 300px; }
+    #gmap_canvas{ height: 300px; width: 300px; }
     .flash { width: 200px; }
 }
 
@@ -58,5 +60,6 @@
     .card{ width: 150px; }
     .mapouter{ height: 200px; width: 200px;}
     .gmap_canvas{ height: 200px; width: 200px; }
+    #gmap_canvas{ height: 200px; width: 200px; }
     .flash { width: 100px; }
 }
