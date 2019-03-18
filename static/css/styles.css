@@ -102,6 +102,8 @@ h5{ color: whitesmoke; }
 
 #particles-js {
     position: absolute;
+    min-width: 100vw;
+    min-height: 100vh;
     width: 100%;
     height: 100%;
     background-color: #233237;
