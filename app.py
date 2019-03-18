@@ -1,10 +1,10 @@
 from flask import Flask, render_template, request, flash
 from forms import ContactForm
 from flask_mail import Mail, Message
-from config import Config, get_config
+from config import Config
 
 app = Flask(__name__)
-get_config()
+Config.get_config()
 app.config.from_object(Config)
 mail = Mail(app)
 

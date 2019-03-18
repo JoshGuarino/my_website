@@ -11,11 +11,10 @@ class Config(object):
     MAIL_USERNAME = ''
     MAIL_PASSWORD = ''
     MAIL_RECIEVE = ''
-
-def get_config():
-    json_data = open('config.json').read()
-    conf = json.loads(json_data)
-    Config.MAIL_USERNAME = conf['email']
-    Config.MAIL_PASSWORD = conf['password']
-    Config.MAIL_RECIEVE = conf['r_email']
-    Config.MAIL_SERVER = conf['serv']
+    def get_config():
+        json_data = open('config.json').read()
+        conf = json.loads(json_data)
+        Config.MAIL_USERNAME = conf['email']
+        Config.MAIL_PASSWORD = conf['password']
+        Config.MAIL_RECIEVE = conf['r_email']
+        Config.MAIL_SERVER = conf['serv']
