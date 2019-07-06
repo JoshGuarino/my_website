@@ -6,7 +6,25 @@
     </div>
     <br><br>
     <div class="row">
-        <div class="col-sm-1"></div> 
+        <div class="col-sm-1"></div>
+        <div class="col-sm-3"><br><br>
+            {% for message in form.name.errors %}
+            <div class="flash" data-aos="fade-up" data-aos-duration="700">{{ message }}</div>
+            {% endfor %}
+            <br>
+            {% for message in form.email.errors %}
+            <div class="flash" data-aos="fade-up" data-aos-duration="700">{{ message }}</div>
+            {% endfor %}
+            <br>
+            {% for message in form.subject.errors %}
+            <div class="flash" data-aos="fade-up" data-aos-duration="700">{{ message }}</div>
+            {% endfor %}
+            <br>
+            {% for message in form.message.errors %}
+            <div class="flash" data-aos="fade-up" data-aos-duration="700">{{ message }}</div>
+            {% endfor %}
+            <br>
+        </div>
         <div class="col-sm-4 text-center">
             <form novalidate="novalidate" method=post data-aos="flip-up" data-aos-duration="700" autocomplete="off">
               {{ form.hidden_tag() }}
@@ -30,30 +48,6 @@
               {{ form.submit }}
             <br><br>
             </form>  
-        </div>
-        <div class="col-sm-2"><br><br>
-            {% for message in form.name.errors %}
-            <div class="flash" data-aos="fade-up" data-aos-duration="700">{{ message }}</div>
-            {% endfor %}
-            <br>
-            {% for message in form.email.errors %}
-            <div class="flash" data-aos="fade-up" data-aos-duration="700">{{ message }}</div>
-            {% endfor %}
-            <br>
-            {% for message in form.subject.errors %}
-            <div class="flash" data-aos="fade-up" data-aos-duration="700">{{ message }}</div>
-            {% endfor %}
-            <br>
-            {% for message in form.message.errors %}
-            <div class="flash" data-aos="fade-up" data-aos-duration="700">{{ message }}</div>
-            {% endfor %}
-        </div>
-        <div class="col-sm-3" data-aos="flip-up" data-aos-duration="700">
-            <div class="mapouter">
-                <div class="gmap_canvas">
-                    <iframe width="500" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=rochester%20ny&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                </div>
-            </div>
         </div>
     </div>
 {% endblock %}

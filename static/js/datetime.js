@@ -4,7 +4,7 @@ const getDateTime = (param) => {
     let min =  date.getMinutes();
     let sec = date.getSeconds();
     let session = "AM";
-    let month = date.getMonth()
+    let month = date.getMonth();
     let weekday = date.getDay();
     let day = date.getDate();
     let year = date.getFullYear();
@@ -103,11 +103,11 @@ const getDateTime = (param) => {
     }
 
     if(param ==="home"){
-        document.getElementById('clock').innerHTML = '<h2 id="time">' + hour + ':' + min + ':' + sec + ' ' + session + '<br>' + weekday + ', ' + month + ' ' + day + ', ' + year +'</h2>';
-        document.getElementById('nav_clock').innerHTML = hour + ':' + min + ':' + sec + ' ' + session;
+        document.getElementById('clock').innerHTML = `<h2 id="time">${hour}:${min}:${sec} ${session}<br>${weekday}, ${month} ${day}, ${year}</h2>`;
+        document.getElementById('nav_clock').innerHTML = `${hour}:${min}:${sec} ${session}`;
     }
     else if(param === "not_home"){
-        document.getElementById('nav_clock').innerHTML = hour + ':' + min + ':' + sec + ' ' + session;
+        document.getElementById('nav_clock').innerHTML = `${hour}:${min}:${sec} ${session}`;
     }
 };
 
