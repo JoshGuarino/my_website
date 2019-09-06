@@ -156,3 +156,5 @@ h5{ color: whitesmoke; }
 
 #carousel{ background-color: #984b43; border: solid 3px #233237; border-radius: 10px;}
 #carousel:hover{ border: solid 3px whitesmoke; }
+
+.g-recaptcha { display: inline-block; }

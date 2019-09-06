@@ -27,27 +27,29 @@
         </div>
         <div class="col-sm-4 text-center">
             <form novalidate="novalidate" method=post data-aos="flip-up" data-aos-duration="700" autocomplete="off">
-              {{ form.hidden_tag() }}
-           <br><br>
-              {{ form.name.label }}
-              <br>
-              {{ form.name }}
-           <br><br>
-              {{ form.email.label }}
-              <br>
-              {{ form.email }}
-           <br><br>
-              {{ form.subject.label }}
-              <br>
-              {{ form.subject }}
-           <br><br>
-              {{ form.message.label }}
-              <br>
-              {{ form.message }}
-           <br><br>
-              {{ form.submit }}
-            <br><br>
-            </form>  
+                {{ form.hidden_tag() }}
+                <br><br>
+                {{ form.name.label }}
+                <br>
+                {{ form.name }}
+                <br><br>
+                {{ form.email.label }}
+                <br>
+                {{ form.email }}
+                <br><br>
+                {{ form.subject.label }}
+                <br>
+                {{ form.subject }}
+                <br><br>
+                {{ form.message.label }}
+                <br>
+                {{ form.message }}
+                <br><br>
+                {{ form.submit }}
+                <br><br>
+                {{ form.recaptcha }}
+                <br><br>
+            </form>
         </div>
     </div>
 {% endblock %}
