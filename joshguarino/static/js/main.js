@@ -21,5 +21,4 @@ let ascii = `
                                  \\::/____/     
                                     
 Like what you see? Go to github.com/joshguarino to check out the code!`;
-                                 
-                                 console.log(ascii);                                 
+console.log(ascii);                                 
