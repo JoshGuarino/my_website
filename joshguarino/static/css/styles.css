@@ -1,5 +1,10 @@
+:root {
+    --primary: #984b43;
+    --secondary: #233237;   
+  }
+
 body{
-    background-color: #233237;
+    background-color: var(--secondary);
     margin: 0;
     padding: 0;
     color: whitesmoke;
@@ -11,10 +16,10 @@ body{
 }
 
 nav{
-    background: #984b43;
+    background: var(--primary);
     width: 100vw;
     position: relative;
-    border-bottom:#984b43 solid 3px;
+    border-bottom:var(--primary) solid 3px;
     padding: .5vw;
     opacity: .7;
     margin-bottom: 75px;
@@ -22,16 +27,16 @@ nav{
 nav:hover{ border-bottom:whitesmoke solid 3px; }
 
 label{ font-size: 20px; }
-form{ border: #984b43 3px solid; border-radius: 10px; background-color: #984b43; opacity: .8; }
+form{ border: var(--primary) 3px solid; border-radius: 10px; background-color: var(--primary); opacity: .8; }
 form:hover{ border: whitesmoke 3px solid; }
 input{
     width: 300px;
     height: 30px;
-    background-color: #233237;
+    background-color: var(--secondary);
     font-size: 15px;
     color: whitesmoke;
     border-radius: 7px;
-    border: #233237 2px solid;
+    border: var(--secondary) 2px solid;
     outline: none;
 }
 input:hover{ border: whitesmoke 2px solid; outline: none; }
@@ -39,19 +44,19 @@ input:focus{ border: whitesmoke 2px solid; outline: none; }
 form textarea#message{
     width: 300px;
     height: 100px;
-    background-color: #233237;
+    background-color: var(--secondary);
     font-size: 15px;
     color: whitesmoke;
     border-radius: 7px;
-    border: #233237 2px solid;
+    border: var(--secondary) 2px solid;
     outline: none;
 }
 form textarea#message:hover{ border: whitesmoke 2px solid; outline: none; }
 form textarea#message:focus{ border: whitesmoke 2px solid; outline: none; }
 form input#submit{
     width: 100px;
-    background-color: #233237;
-    border: #233237 2px solid;
+    background-color: var(--secondary);
+    border: var(--secondary) 2px solid;
     color: whitesmoke;
     border-radius: 7px;
     outline: none;
@@ -60,39 +65,39 @@ form input#submit:hover{ border: whitesmoke 2px solid; outline: none; }
 
 a{ color: whitesmoke; outline: none; }
 a:hover{ color: whitesmoke; text-decoration: none; outline: none; }
-.active_page{color: #233237; outline: none;}
-.active_page:hover{ color: #233237; text-decoration: none; outline: none; }
+.active_page{color: var(--secondary); outline: none;}
+.active_page:hover{ color: var(--secondary); text-decoration: none; outline: none; }
 
 h1{ color: whitesmoke; font-size: 55px; }
 h2{ font-size: 40px;}
-h3{ width: 25vw; color: #984b43; font-size: 10vw; }
+h3{ width: 25vw; color: var(--primary); font-size: 10vw; }
 h5{ color: whitesmoke; }
 
-.card{ color: #233237; background-color: #984b43; border: solid 2px #233237; opacity: .8; }
+.card{ color: var(--secondary); background-color: var(--primary); border: solid 2px var(--secondary); opacity: .8; }
 .card:hover{ border: solid 2px whitesmoke; }
 
-#logo{ background-color: #233237; border-radius: 10%; opacity: 1; width: 75px; border: 2px solid #233237; }
+#logo{ background-color: var(--secondary); border-radius: 10%; opacity: 1; width: 75px; border: 2px solid var(--secondary); }
 #logo:hover{ border: 2px solid whitesmoke; }
-#name_title{ font-size: 70px; color: #984b43; }
+#name_title{ font-size: 70px; color: var(--primary); }
 #josh{ height: 400px; width: 600px; }
-#check{ height: 300px; width: 300px; background-color: #984b43; border: solid 3px #233237; border-radius: 10px; }
+#check{ height: 300px; width: 300px; background-color: var(--primary); border: solid 3px var(--secondary); border-radius: 10px; }
 #check:hover{ border: solid 3px whitesmoke; }
 #title{ padding-bottom: 20px; opacity: .8;}
 #para{ font-size: 20px; opacity: .8;}
 #rowspace{ padding-bottom: 200px; }
-#btn{ background-color: #233237;  border: #233237 2px solid; color: whitesmoke; }
+#btn{ background-color: var(--secondary);  border: var(--secondary) 2px solid; color: whitesmoke; }
 #btn:hover{ border: whitesmoke 2px solid; }
 
-.modal-content{ background-color: #984b43; opacity: .9; border: 2px solid #233237 ; }
+.modal-content{ background-color: var(--primary); opacity: .9; border: 2px solid var(--secondary) ; }
 .modal-content:hover{ border: 2px solid whitesmoke; }
-.modal-body{ background-color: #233237; }
+.modal-body{ background-color: var(--secondary); }
 .modal-header{ border-bottom: none; }
 .modal-footer{ border-top: none; }
 
 #error{
-    background-color: #984b43;
+    background-color: var(--primary);
     color: whitesmoke;
-    border: #233237 3px solid;
+    border: var(--secondary) 3px solid;
     opacity: .7;
     border-radius: 10px;
     font-size: 75px;
@@ -105,7 +110,7 @@ h5{ color: whitesmoke; }
     min-height: 100vh;
     width: 100%;
     height: 100%;
-    background-color: #233237;
+    background-color: var(--secondary);
     background-image: url("");
     background-repeat: no-repeat;
     background-size: cover;
@@ -113,9 +118,9 @@ h5{ color: whitesmoke; }
   }
 
 #clock{
-    background-color: #984b43;
+    background-color: var(--primary);
     color: whitesmoke;
-    border: #984b43 3px solid;
+    border: var(--primary) 3px solid;
     opacity: .8;
     border-radius: 10px;
 }
@@ -143,18 +148,18 @@ h5{ color: whitesmoke; }
 .fa-cogs{ border:none }
 .fa-envelope{ border:none }
 
-.flash { background-color: #984b43; padding: 10px; width: 175px; color: whitesmoke; border-radius: 5px; border: solid 2px #984b43; opacity: .8; }
+.flash { background-color: var(--primary); padding: 10px; width: 175px; color: whitesmoke; border-radius: 5px; border: solid 2px var(--primary); opacity: .8; }
 .flash:hover{ border: solid 2px whitesmoke; }
 
 .mapouter{ text-align: right; height: 400px; width: 400px;}
 .gmap_canvas{ height: 400px; width: 400px; border-radius: 10px;} 
-#gmap_canvas{ height: 400px; width: 400px; border-radius: 10px; border: solid 3px #233237;}
+#gmap_canvas{ height: 400px; width: 400px; border-radius: 10px; border: solid 3px var(--secondary);}
 #gmap_canvas:hover{ border: solid 3px whitesmoke; }
 
-#music{ border-radius: 5px; border: solid 2px #233237;}
+#music{ border-radius: 5px; border: solid 2px var(--secondary);}
 #music:hover{ border: solid 2px whitesmoke; }
 
-#carousel{ background-color: #984b43; border: solid 3px #233237; border-radius: 10px;}
+#carousel{ background-color: var(--primary); border: solid 3px var(--secondary); border-radius: 10px;}
 #carousel:hover{ border: solid 3px whitesmoke; }
 
 .g-recaptcha { display: inline-block; }
