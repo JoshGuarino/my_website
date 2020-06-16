@@ -1,6 +1,5 @@
 from key_gen import generate_key
 import yaml
-import json
 
 class Config(object):
     SECRET_KEY = generate_key()
