@@ -24,6 +24,10 @@
             <div class="flash" data-aos="fade-up" data-aos-duration="700">{{ message }}</div>
             {% endfor %}
             <br>
+            {% for message in form.recaptcha.errors %}
+            <div class="flash" data-aos="fade-up" data-aos-duration="700">{{ message }}</div>
+            {% endfor %}
+            <br>
         </div>
         <div class="col-sm-4 text-center">
             <form novalidate="novalidate" method=post data-aos="flip-up" data-aos-duration="700" autocomplete="off">
@@ -45,9 +49,9 @@
                 <br>
                 {{ form.message }}
                 <br><br>
-                {{ form.submit }}
-                <br><br>
                 {{ form.recaptcha }}
+                <br><br>
+                {{ form.submit }}
                 <br><br>
             </form>
         </div>
