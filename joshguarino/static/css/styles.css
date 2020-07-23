@@ -1,18 +1,20 @@
 :root {
     --primary: #984b43;
-    --secondary: #233237;   
+    --dark:whitesmoke;
+    --light:black;   
   }
 
 body{
-    background-color: var(--secondary);
+    background-color: var(--dark);
     margin: 0;
     padding: 0;
-    color: whitesmoke;
+    color: var(--light);
     font-family: 'Ubuntu', sans-serif;
     background-size: cover;
     z-index: 0;
     margin-bottom: 10vh;
-    overflow-x: hidden; 
+    overflow-x: hidden;
+    opacity: .9; 
 }
 
 nav{
@@ -21,88 +23,88 @@ nav{
     position: relative;
     border-bottom:var(--primary) solid 3px;
     padding: .5vw;
-    opacity: .7;
+    opacity: .8;
     margin-bottom: 75px;
 }
-nav:hover{ border-bottom:whitesmoke solid 3px; }
+nav:hover{ border-bottom:var(--light) solid 3px; }
 
 label{ font-size: 20px; }
 form{ border: var(--primary) 3px solid; border-radius: 10px; background-color: var(--primary); opacity: .8; }
-form:hover{ border: whitesmoke 3px solid; }
+form:hover{ border: var(--light) 3px solid; }
 input{
     width: 300px;
     height: 30px;
-    background-color: var(--secondary);
+    background-color: var(--dark);
     font-size: 15px;
-    color: whitesmoke;
+    color: var(--light);
     border-radius: 7px;
-    border: var(--secondary) 2px solid;
+    border: var(--dark) 2px solid;
     outline: none;
 }
-input:hover{ border: whitesmoke 2px solid; outline: none; }
-input:focus{ border: whitesmoke 2px solid; outline: none; }
+input:hover{ border: var(--light) 2px solid; outline: none; }
+input:focus{ border: var(--light) 2px solid; outline: none; }
 form textarea#message{
     width: 300px;
     height: 100px;
-    background-color: var(--secondary);
+    background-color: var(--dark);
     font-size: 15px;
-    color: whitesmoke;
+    color: var(--light);
     border-radius: 7px;
-    border: var(--secondary) 2px solid;
+    border: var(--dark) 2px solid;
     outline: none;
 }
-form textarea#message:hover{ border: whitesmoke 2px solid; outline: none; }
-form textarea#message:focus{ border: whitesmoke 2px solid; outline: none; }
+form textarea#message:hover{ border: var(--light) 2px solid; outline: none; }
+form textarea#message:focus{ border: var(--light) 2px solid; outline: none; }
 form input#submit{
     width: 100px;
-    background-color: var(--secondary);
-    border: var(--secondary) 2px solid;
-    color: whitesmoke;
+    background-color: var(--dark);
+    border: var(--dark) 2px solid;
+    color: var(--light);
     border-radius: 7px;
     outline: none;
 }
-form input#submit:hover{ border: whitesmoke 2px solid; outline: none; }
+form input#submit:hover{ border: var(--light) 2px solid; outline: none; }
 
-a{ color: whitesmoke; outline: none; }
-a:hover{ color: whitesmoke; text-decoration: none; outline: none; }
-.active_page{color: var(--secondary); outline: none;}
-.active_page:hover{ color: var(--secondary); text-decoration: none; outline: none; }
+a{ color: var(--light); outline: none; }
+a:hover{ color: var(--light); text-decoration: none; outline: none; }
+.active_page{color: var(--dark); outline: none;}
+.active_page:hover{ color: var(--dark); text-decoration: none; outline: none; }
 
-h1{ color: whitesmoke; font-size: 55px; }
+h1{ color: var(--light); font-size: 55px; }
 h2{ font-size: 40px;}
 h3{ width: 25vw; color: var(--primary); font-size: 10vw; }
-h5{ color: whitesmoke; }
+h5{ color: var(--light); }
 
-.card{ color: var(--secondary); background-color: var(--primary); border: solid 2px var(--secondary); opacity: .8; }
-.card:hover{ border: solid 2px whitesmoke; }
+.card{ color: var(--dark); background-color: var(--primary); border: solid 2px var(--dark); opacity: .9; }
+.card:hover{ border: solid 2px var(--light); }
 
-#logo{ background-color: var(--secondary); border-radius: 10%; opacity: 1; width: 75px; border: 2px solid var(--secondary); }
-#logo:hover{ border: 2px solid whitesmoke; }
+#logo{ background-color: var(--dark); border-radius: 10%; opacity: 1; width: 75px; border: 2px solid var(--dark); }
+#logo:hover{ border: 2px solid var(--light); }
 #name_title{ font-size: 70px; color: var(--primary); }
 #josh{ height: 400px; width: 600px; }
-#check{ height: 300px; width: 300px; background-color: var(--primary); border: solid 3px var(--secondary); border-radius: 10px; }
-#check:hover{ border: solid 3px whitesmoke; }
+#check{ height: 300px; width: 300px; background-color: var(--primary); border: solid 3px var(--dark); border-radius: 10px; }
+#check:hover{ border: solid 3px var(--light); }
 #title{ padding-bottom: 20px; opacity: .8;}
 #para{ font-size: 20px; opacity: .8;}
 #rowspace{ padding-bottom: 200px; }
-#btn{ background-color: var(--secondary);  border: var(--secondary) 2px solid; color: whitesmoke; }
-#btn:hover{ border: whitesmoke 2px solid; }
+#btn{ background-color: var(--dark);  border: var(--dark) 2px solid; color: var(--light); }
+#btn:hover{ border: var(--light) 2px solid; }
 
-.modal-content{ background-color: var(--primary); opacity: .9; border: 2px solid var(--secondary) ; }
-.modal-content:hover{ border: 2px solid whitesmoke; }
-.modal-body{ background-color: var(--secondary); }
+.modal-content{ background-color: var(--primary); opacity: .9; border: 2px solid var(--dark) ; }
+.modal-content:hover{ border: 2px solid var(--light); }
+.modal-body{ background-color: var(--dark); }
 .modal-header{ border-bottom: none; }
 .modal-footer{ border-top: none; }
 
 #error{
     background-color: var(--primary);
-    color: whitesmoke;
-    border: var(--secondary) 3px solid;
+    color: var(--light);
+    border: var(--dark) 3px solid;
     opacity: .7;
     border-radius: 10px;
     font-size: 75px;
 }
-#error:hover{ border: whitesmoke 3px solid; }
+#error:hover{ border: var(--light) 3px solid; }
 
 #particles-js {
     position: absolute;
@@ -110,56 +112,42 @@ h5{ color: whitesmoke; }
     min-height: 100vh;
     width: 100%;
     height: 100%;
-    background-color: var(--secondary);
+    background-color: var(--dark);
     background-image: url("");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
   }
 
-#clock{
-    background-color: var(--primary);
-    color: whitesmoke;
-    border: var(--primary) 3px solid;
-    opacity: .8;
-    border-radius: 10px;
-}
-#clock:hover{ border: whitesmoke 3px solid; }
+#clock{ background-color: var(--primary); color: var(--light); border: var(--primary) 3px solid; opacity: .9; border-radius: 10px; }
+#clock:hover{ border: var(--light) 3px solid; }
 #nav_clock{ font-size: 45px; }
 
 #time{ font-size: 50px; }
 
-.fa{
-    padding: 20px;
-    font-size: 10px;
-    width: 60px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 10%;
-  }
-.fa:hover{ color: currentColor; border: whitesmoke 2px solid; }
-.fa-linkedin{ background: #007bb5; border: #007bb5 2px solid; }
-.fa-github{ background-color:#333; border: #333 2px solid; }
-.fa-google{ background: #dd4b39; border: #dd4b39 2px solid; }
+.fa{ padding: 20px; font-size: 10px; width: 60px; text-align: center; text-decoration: none; margin: 5px 2px; border-radius: 10%; }
+.fa:hover{ color: currentColor; border: var(--light) 2px solid; }
+.fa-linkedin{ color: whitesmoke; background: #007bb5; border: #007bb5 2px solid; }
+.fa-github{ color: whitesmoke; background-color:#333; border: #333 2px solid; }
+.fa-google{ color: whitesmoke; background: #dd4b39; border: #dd4b39 2px solid; }
 .fa-reddit{ background: #ff5700; border: #ff5700 2px solid; }
 .fa-home{ border:none }
 .fa-user{ border:none }
 .fa-cogs{ border:none }
 .fa-envelope{ border:none }
 
-.flash { background-color: var(--primary); padding: 10px; width: 175px; color: whitesmoke; border-radius: 5px; border: solid 2px var(--primary); opacity: .8; }
-.flash:hover{ border: solid 2px whitesmoke; }
+.flash { background-color: var(--primary); padding: 10px; width: 175px; color: var(--light); border-radius: 5px; border: solid 2px var(--primary); opacity: .8; }
+.flash:hover{ border: solid 2px var(--light); }
 
 .mapouter{ text-align: right; height: 400px; width: 400px;}
 .gmap_canvas{ height: 400px; width: 400px; border-radius: 10px;} 
-#gmap_canvas{ height: 400px; width: 400px; border-radius: 10px; border: solid 3px var(--secondary);}
-#gmap_canvas:hover{ border: solid 3px whitesmoke; }
+#gmap_canvas{ height: 400px; width: 400px; border-radius: 10px; border: solid 3px var(--dark);}
+#gmap_canvas:hover{ border: solid 3px var(--light); }
 
-#music{ border-radius: 5px; border: solid 2px var(--secondary);}
-#music:hover{ border: solid 2px whitesmoke; }
+#music{ border-radius: 5px; border: solid 2px var(--dark);}
+#music:hover{ border: solid 2px var(--light); }
 
-#carousel{ background-color: var(--primary); border: solid 3px var(--secondary); border-radius: 10px;}
-#carousel:hover{ border: solid 3px whitesmoke; }
+#carousel{ background-color: var(--primary); border: solid 3px var(--dark); border-radius: 10px;}
+#carousel:hover{ border: solid 3px var(--light); }
 
 .g-recaptcha { display: inline-block; }
