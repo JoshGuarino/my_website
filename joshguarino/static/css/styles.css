@@ -1,8 +1,13 @@
 :root {
     --primary: #984b43;
-    --dark:whitesmoke;
-    --light:black;   
+    --dark:black;
+    --light:whitesmoke;   
   }
+
+*:focus {
+    outline: 0 !important;
+    box-shadow: none!important;
+}
 
 body{
     background-color: var(--dark);
@@ -42,7 +47,6 @@ input{
     outline: none;
 }
 input:hover{ border: var(--light) 2px solid; outline: none; }
-input:focus{ border: var(--light) 2px solid; outline: none; }
 form textarea#message{
     width: 300px;
     height: 100px;
@@ -54,7 +58,6 @@ form textarea#message{
     outline: none;
 }
 form textarea#message:hover{ border: var(--light) 2px solid; outline: none; }
-form textarea#message:focus{ border: var(--light) 2px solid; outline: none; }
 form input#submit{
     width: 100px;
     background-color: var(--dark);
