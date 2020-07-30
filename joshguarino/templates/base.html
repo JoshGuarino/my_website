@@ -19,9 +19,9 @@
 </head>
 
 {% if title %}
-<body onload="startClock('not_home');">
+<body onload="check_cookie(); startClock('not_home');">
 {% else %}
-<body onload="startClock('home');">
+<body onload="check_cookie(); startClock('home');">
 {% endif %}
 
 <div id="particles-js"></div>
