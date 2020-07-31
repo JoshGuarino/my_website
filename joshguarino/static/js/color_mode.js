@@ -52,3 +52,5 @@ function set_dark(){
     document.getElementById('color_mode').innerHTML = 'Dark';
     set_cookie('dark');
 }
+
+check_cookie();
