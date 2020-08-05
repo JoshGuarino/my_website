@@ -9,7 +9,7 @@ function toggle_color(){
 }
 
 function check_cookie(){
-    let cur_color = get_cookie_value(); console.log(cur_color);
+    let cur_color = get_cookie_value();
     if (cur_color === 'light'){
         set_light();
         return;
