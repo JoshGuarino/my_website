@@ -1,5 +1,6 @@
 from key_gen import generate_key
 import yaml
+import os
 
 class Config(object):
     SECRET_KEY = generate_key()
@@ -15,7 +16,7 @@ class Config(object):
     RECAPTCHA_PRIVATE_KEY = ''
     RECAPTCHA_OPTIONS = {'theme':'black'}
     def get_config():
-        with open('config.yaml') as f:
+        with open(f'{os.getcwd()}/config.yaml') as f:
             data = yaml.safe_load(f)
         Config.MAIL_USERNAME = data['email']
         Config.MAIL_PASSWORD = data['password']
