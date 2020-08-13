@@ -12,6 +12,7 @@ flask_wtf = "*"
 wtforms = "*"
 email-validator = "*"
 pyyaml = "*"
+requests = "*"
 
 [requires]
 python_version = "3.8"
