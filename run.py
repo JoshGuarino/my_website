@@ -3,11 +3,11 @@ import subprocess
 import platform
 
 def run_app():
-    os.chdir('joshguarino')
+    # os.chdir('joshguarino')
     if platform.system() == 'Windows':
-        subprocess.call(["py", "app.py"])
+        subprocess.call(["py", "./src/app.py"])
         return
-    subprocess.call(["python3", "app.py"])
+    subprocess.call(["python3", "./src/app.py"])
 
 def dep_install():
     subprocess.call(["pipenv", "install"])   

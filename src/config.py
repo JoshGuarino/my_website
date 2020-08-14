@@ -16,7 +16,7 @@ class Config(object):
     RECAPTCHA_PRIVATE_KEY = ''
     RECAPTCHA_OPTIONS = {'theme':'black'}
     def get_config():
-        with open(f'{os.getcwd()}/config.yaml') as f:
+        with open(f'{os.getcwd()}/src/config.yaml') as f:
             data = yaml.safe_load(f)
         Config.MAIL_USERNAME = data['email']
         Config.MAIL_PASSWORD = data['password']
@@ -24,3 +24,5 @@ class Config(object):
         Config.MAIL_SERVER = data['serv']
         Config.RECAPTCHA_PUBLIC_KEY = data['RECAPTCHA_PUBLIC_KEY']
         Config.RECAPTCHA_PRIVATE_KEY = data['RECAPTCHA_PRIVATE_KEY']
+        Config.GITHUB_TOKEN = data['github_token']
+        Config.GITHUB_URL = data['github_url']

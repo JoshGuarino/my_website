@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, flash
 from forms import ContactForm
 from flask_mail import Mail, Message
 from config import Config
+from api import Api
 
 app = Flask(__name__)
 Config.get_config()
@@ -19,6 +20,7 @@ def about():
     
 @app.route("/skills")
 def skills():
+    github = Api(key=app.config['GITHUB_TOKEN'], url=app.config['GITHUB_URL'])
     return render_template('skills.html', title="Skills")
 
 @app.route("/contact", methods=['GET','POST'])
@@ -28,7 +30,7 @@ def contact():
         if form.validate() == False:
             flash('All fields are required.')
             return render_template('contact.html', form=form, title="Contact")
-        msg = Message(form.subject.data, sender=app.config["MAIL_USERNAME"], recipients=[app.config['MAIL_RECIEVE']])
+        msg = Message(form.subject.data, sender=app.config['MAIL_USERNAME'], recipients=[app.config['MAIL_RECIEVE']])
         msg.body = """
         From: %s <%s>
         %s
