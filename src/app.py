@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, flash
 from forms import ContactForm
 from flask_mail import Mail, Message
 from config import Config
-from api import Api
+from graphql import GraphQL
 
 app = Flask(__name__)
 Config.get_config()
@@ -20,8 +20,9 @@ def about():
     
 @app.route("/skills")
 def skills():
-    github = Api(key=app.config['GITHUB_TOKEN'], url=app.config['GITHUB_URL'])
-    return render_template('skills.html', title="Skills")
+    github = GraphQL(token=app.config['GITHUB_TOKEN'], url=app.config['GITHUB_URL'])
+    data = github.post(app.config['GITHUB_QUERY'])
+    return render_template('skills.html', title="Skills", repos=data)
 
 @app.route("/contact", methods=['GET','POST'])
 def contact():

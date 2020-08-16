@@ -26,3 +26,4 @@ class Config(object):
         Config.RECAPTCHA_PRIVATE_KEY = data['RECAPTCHA_PRIVATE_KEY']
         Config.GITHUB_TOKEN = data['github_token']
         Config.GITHUB_URL = data['github_url']
+        Config.GITHUB_QUERY = data['github_query']
