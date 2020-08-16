@@ -7,7 +7,7 @@ class GraphQL:
         self.query = None
 
     def get(self, query):
-        self.query = { 'query' : query }\
+        self.query = { 'query' : query }
         response = requests.get(url=self.url, json=self.query, headers=self.headers)
         if response.status_code == 200:
             return response.json
