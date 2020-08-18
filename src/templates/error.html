@@ -1,18 +1,15 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div id="main" class="container">
-        <br><br>
-        <div class="row">
-            <div id="title" data-aos="fade-up"  data-aos-duration="700" class="col-sm-12 center-block text-center">
-                <h2>{{ message }}</h2>
-            </div>
+    <div class="row">
+        <div id="title" data-aos="fade-up"  data-aos-duration="700" class="col-sm-12 center-block text-center">
+            <h2>{{ message }}</h2>
         </div>
-        <br><br><br><br>
-        <div class="row">
-            <div class="col-sm-1"></div>
-            <div id="error" data-aos="flip-up"  data-aos-duration="700" class="col-sm-10 center-block text-center">{{ the_error }}</div>
-            <div class="col-sm-1"></div>
-        </div>
+    </div>
+    <br><br><br><br>
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div id="error" data-aos="flip-up"  data-aos-duration="700" class="col-sm-10 center-block text-center">{{ the_error }}</div>
+        <div class="col-sm-1"></div>
     </div>
 {% endblock %}
