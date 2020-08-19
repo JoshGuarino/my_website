@@ -9,80 +9,41 @@
 <br>
 <div class='row'>
     <div class="col-sm-2"></div>
-    <div class="col-sm-2 text-center" data-aos="flip-up" data-aos-duration="700">
-        <div class="card">
-            <img class="card-img-top" src="/static/images/program_lang.jpg" alt="Programming Languages">
-            <div class="card-body">
-                <h5 class="card-title">Programming Languages</h5>
-                <p class="card-text"></p>
-                <a href="#" id="btn" class="btn btn-default" data-toggle="modal" data-target="#Modal" onclick="populateModal(0);">Find out more</a>
+    {% for repo in repos[0] %}
+        <div class="col-sm-2 text-center" data-aos="flip-up" data-aos-duration="700">
+            <div class="card">
+                <img class="card-img-top" src="/static/images/program_lang.jpg" alt="Programming Languages">
+                <div class="card-body">
+                    <h5 class="card-title">{{ repo.name }}</h5>
+                    <span id="{{repo.name}}" data-description="{{repo.description}}" data-url="{{repo.url}}"></span>
+                    <a href="#" id="btn" class="btn btn-default" data-toggle="modal" data-target="#Modal" onclick="populateModal('{{repo.name}}');">Find out more</a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col-sm-1" id="card_space"></div>
-    <div class="col-sm-2 text-center" data-aos="flip-up" data-aos-duration="700">
-        <div class="card">
-            <img class="card-img-top" src="/static/images/framework_library.jpg" alt="Frameworks and Libraries">
-            <div class="card-body">
-                <h5 class="card-title">Frameworks & Libraries</h5>
-                <p class="card-text"></p>
-                <a href="#" id="btn"class="btn btn-default" data-toggle="modal" data-target="#Modal" onclick="populateModal(1);">Find out more</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-1" id="card_space"></div>
-    <div class="col-sm-2 text-center" data-aos="flip-up" data-aos-duration="700">
-        <div class="card">
-            <img class="card-img-top" src="/static/images/package.jpg" alt="Package Managers">
-            <div class="card-body">
-                <h5 class="card-title">Package Managers</h5>
-                <p class="card-text"></p>
-                <a href="#" id="btn" class="btn btn-default" data-toggle="modal" data-target="#Modal" onclick="populateModal(2);">Find out more</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
+        <div class="col-sm-1"></div>
+    {% endfor %}
+    <div class="col-sm-1"></div>
 </div>
 <br><br>
 <div class='row'>
-        <div class="col-sm-2"></div>
+    <div class="col-sm-2"></div>
+    {% for repo in repos[1] %}
         <div class="col-sm-2 text-center" data-aos="flip-up" data-aos-duration="700">
             <div class="card">
-                <img class="card-img-top" src="/static/images/db.jpg" alt="Database Software">
+                <img class="card-img-top" src="/static/images/program_lang.jpg" alt="Programming Languages">
                 <div class="card-body">
-                    <h5 class="card-title">Database Software</h5>
-                    <p class="card-text"></p>
-                    <a href="#"  id="btn" class="btn btn-default" data-toggle="modal" data-target="#Modal" onclick="populateModal(3);">Find out more</a>
+                    <h5 class="card-title">{{ repo.name }}</h5>
+                    <span id="{{repo.name}}" data-description="{{repo.description}}" data-url="{{repo.url}}"></span>
+                    <a href="#" id="btn" class="btn btn-default" data-toggle="modal" data-target="#Modal" onclick="populateModal('{{repo.name}}');">Find out more</a>
                 </div>
             </div>
         </div>
-        <div class="col-sm-1" id="card_space"></div>
-        <div class="col-sm-2 text-center" data-aos="flip-up" data-aos-duration="700">
-            <div class="card">
-                <img class="card-img-top" src="/static/images/git.png" alt="Version Control">
-                <div class="card-body">
-                    <h5 class="card-title">Version Control w/ GIT</h5>
-                    <p class="card-text"></p>
-                    <a href="#" id="btn" class="btn btn-default" data-toggle="modal" data-target="#Modal" onclick="populateModal(4);">Find out more</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-1" id="card_space"></div>
-        <div class="col-sm-2 text-center" data-aos="flip-up" data-aos-duration="700">
-            <div class="card">
-                <img class="card-img-top" src="/static/images/st.png" alt="Software Testing">
-                <div class="card-body">
-                    <h5 class="card-title">Software Testing/QA</h5>
-                    <p class="card-text"></p>
-                    <a href="#" id="btn" class="btn btn-default" data-toggle="modal" data-target="#Modal" onclick="populateModal(5);">Find out more</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-2"></div>
-    </div>
+        <div class="col-sm-1"></div>
+    {% endfor %}
+    <div class="col-sm-1"></div>
 </div>
 
-<!-- modal for skill expand -->
+<!-- modal -->
 <div class="modal fade" id="Modal" tabindex="-1">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -91,27 +52,28 @@
             </div>
             <div class="modal-body">
                 <div class="row">
-                    <div class="col-sm-6">
-                        <ul id="m_content"></ul>
-                    </div>
+                    <div class="col-sm-3"><b>Description:</b></div>
                     <div class="col-sm-6">
                         <p id="m_info"></p>
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" id="btn" class="btn btn-default" data-dismiss="modal">Close</button>
+                <div class="col-sm-1"></div>
+                <a type="button" href="" target="_blank" id="url" class="btn btn-default col-sm-4">Link to Repo</a>
+                <div class="col-sm-5"></div>
+                <button type="button" class="btn btn-default col-sm-2" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
 </div>
 {% endblock %}
 {% block scripts %}
-    <script src="/static/js/skills.js"></script>
-    <script>
-        $(function() {
-            $('#icon_skills').addClass("active_page");
-            $('#text_skills').addClass("active_page");
-        });
-    </script>
+<script src="/static/js/skills.js"></script>
+<script>
+    $(function() {
+        $('#icon_skills').addClass("active_page");
+        $('#text_skills').addClass("active_page");
+    });
+</script>
 {% endblock scripts %}

@@ -22,7 +22,10 @@ def about():
 def skills():
     github = GraphQL(token=app.config['GITHUB_TOKEN'], url=app.config['GITHUB_URL'])
     data = github.post(app.config['GITHUB_QUERY'])
-    return render_template('skills.html', title="Skills", repos=data)
+    repos = data['data']['user']['pinnedItems']['nodes']
+    repo1 = [repos[0], repos[1], repos[2]]
+    repo2 = [repos[3], repos[4], repos[5]]
+    return render_template('skills.html', title="Skills", repos=[repo1, repo2])
 
 @app.route("/contact", methods=['GET','POST'])
 def contact():

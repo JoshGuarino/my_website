@@ -10,7 +10,7 @@ class GraphQL:
         self.query = { 'query' : query }
         response = requests.get(url=self.url, json=self.query, headers=self.headers)
         if response.status_code == 200:
-            return response.json
+            return response.json()
         return f'Got unexpected status code {response.status_code}: {response.content}'
 
     def post(self, query):
