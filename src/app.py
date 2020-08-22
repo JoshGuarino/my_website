@@ -3,6 +3,7 @@ from forms import ContactForm
 from flask_mail import Mail, Message
 from config import Config
 from graphql import GraphQL
+from pprint import pprint
 
 app = Flask(__name__)
 Config.get_config()
@@ -23,8 +24,9 @@ def skills():
     github = GraphQL(token=app.config['GITHUB_TOKEN'], url=app.config['GITHUB_URL'])
     data = github.post(app.config['GITHUB_QUERY'])
     repos = data['data']['user']['pinnedItems']['nodes']
-    repo1 = [repos[0], repos[1], repos[2]]
-    repo2 = [repos[3], repos[4], repos[5]]
+    repo1 = repos[0:3]
+    repo2 = repos[3:6]
+    pprint(repos)
     return render_template('skills.html', title="Skills", repos=[repo1, repo2])
 
 @app.route("/contact", methods=['GET','POST'])
