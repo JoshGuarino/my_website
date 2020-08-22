@@ -87,7 +87,7 @@ const getDateTime = (param) => {
 
     let copyright_elems = document.querySelectorAll('.copyright'); 
     copyright_elems.forEach(element => {
-        element.innerHTML = `© 2019-${date.getFullYear()} Josh Guarino`;
+        element.innerHTML = `© 2019-${year} Josh Guarino`;
     });
 
     if(param ==="home"){
