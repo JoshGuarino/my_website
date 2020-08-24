@@ -32,6 +32,9 @@ nav{
 }
 nav:hover{ border-bottom:var(--light) solid 3px; }
 
+iframe.resume{ border: black 3px solid; border-radius: 10px; height: 600px; width: 66vw; }
+iframe.resume:hover{ border: var(--primary) 3px solid; }
+
 label{ font-size: 20px; }
 form{ border: var(--primary) 3px solid; border-radius: 10px; background-color: var(--primary); opacity: .8; }
 form:hover{ border: var(--light) 3px solid; }
