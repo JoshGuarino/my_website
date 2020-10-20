@@ -35,7 +35,6 @@
     #gmap_canvas{ height: 250px; width: 250px; }
     .gmap_canvas{ height: 250px; width: 250px; }
     .flash { width: 125px; }
-
 }
 
 @media (min-width: 1200px){
@@ -54,6 +53,7 @@
     .gmap_canvas{ height: 300px; width: 300px; }
     #gmap_canvas{ height: 300px; width: 300px; }
     .flash { width: 200px; }
+    iframe.resume{ width: 90vw; }
 }
 
 @media (max-width: 800px) and (min-width: 575px) {
