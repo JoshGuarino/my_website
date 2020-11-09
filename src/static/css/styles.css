@@ -32,7 +32,7 @@ nav{
 }
 nav:hover{ border-bottom:var(--light) solid 3px; }
 
-iframe.resume{ border: var(--dark) 3px solid; border-radius: 10px; height: 600px; width: 66vw; background-color: var(--primary); }
+iframe.resume{ border: var(--dark) 3px solid; border-radius: 10px; height: 700px; width: 45vw; background-color: var(--primary); }
 iframe.resume:hover{ border: var(--light) 3px solid; }
 
 label{ font-size: 20px; }
@@ -99,6 +99,7 @@ h5{ color: var(--light); }
 
 .btn{ background-color: var(--dark);  border: var(--dark) 2px solid; color: var(--light); }
 .btn:hover{ border: var(--light) 2px solid; }
+#download{ background-color: var(--primary); font-size: 25px; }
 
 .modal-content{ background-color: var(--primary); opacity: .9; border: 2px solid var(--dark) ; }
 .modal-content:hover{ border: 2px solid var(--light); }

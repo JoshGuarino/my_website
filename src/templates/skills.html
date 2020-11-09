@@ -47,7 +47,7 @@
     {% endfor %}
     <div class="col-sm-1"></div>
 </div>
-<br><br>
+<br><br><br><br>
 <div class="row">
     <div class="col-sm-12 text-center" data-aos="fade-down" data-aos-duration="700">
         <h4>Resume:</h4>
@@ -55,15 +55,23 @@
 </div>
 <div class="row">
     <div class="col-sm-2"></div>
-    <div class="col-sm-8" data-aos="flip-up" data-aos-duration="700">
+    <div class="col-sm-8 d-flex justify-content-center" data-aos="flip-up" data-aos-duration="700">
         <iframe class="resume" src="https://docs.google.com/document/d/e/2PACX-1vS0CQiw6q3F5ddYOz9R_IUk355ZNj1KosEY_CU_jYn1Ursh8Wry7T5U4b96sIg4y_ZIsQJqR9-8Du48/pub?embedded=true"></iframe>
+    </div>
+    <div class="col-sm-2"></div>
+</div>
+<br>
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div div class="col-sm-8 d-flex justify-content-center" data-aos="flip-up" data-aos-duration="700">
+        <a href="https://docs.google.com/document/d/e/2PACX-1vS0CQiw6q3F5ddYOz9R_IUk355ZNj1KosEY_CU_jYn1Ursh8Wry7T5U4b96sIg4y_ZIsQJqR9-8Du48/pub" id="download" class="btn btn-default" download target="_blank">Download</a>
     </div>
     <div class="col-sm-2"></div>
 </div>
 
 <!-- modal -->
 <div class="modal fade" id="Modal" tabindex="-1">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title text-center" id="m_title"></h5>
@@ -78,9 +86,9 @@
             </div>
             <div class="modal-footer">
                 <div class="col-sm-1"></div>
-                <a type="button" href="" target="_blank" id="url" class="btn btn-default col-sm-4">Link to Repo</a>
+                <a href="" target="_blank" id="url" class="btn btn-default col-sm-4">Link to Repo</a>
                 <div class="col-sm-5"></div>
-                <button type="button" class="btn btn-default col-sm-2" data-dismiss="modal">Close</button>
+                <button class="btn btn-default col-sm-2" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
