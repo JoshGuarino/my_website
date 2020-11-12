@@ -17,13 +17,13 @@ class Config(object):
     RECAPTCHA_PRIVATE_KEY = ''
     RECAPTCHA_OPTIONS = {'theme':'black'}
     def get_config():
-        Config.MAIL_USERNAME = os.environ['EMAIL']
-        Config.MAIL_PASSWORD = os.environ['PASSWORD']
-        Config.MAIL_RECIEVE = os.environ['R_MAIL']
-        Config.MAIL_SERVER = os.environ['SERV']
-        Config.RECAPTCHA_PUBLIC_KEY = os.environ['RECAPTCHA_PUBLIC_KEY']
-        Config.RECAPTCHA_PRIVATE_KEY = os.environ['RECAPTCHA_PRIVATE_KEY']
-        Config.GITHUB_TOKEN = os.environ['GITHUB_TOKEN']
-        Config.GITHUB_URL = os.environ['GITHUB_URL']
-        Config.PA_TOKEN = os.environ['PA_TOKEN']
-        Config.PA_RELOAD = os.environ['PA_RELOAD']
+        Config.MAIL_USERNAME = os.getenv('EMAIL')
+        Config.MAIL_PASSWORD = os.getenv('PASSWORD')
+        Config.MAIL_RECIEVE = os.getenv('R_MAIL')
+        Config.MAIL_SERVER = os.getenv('SERV')
+        Config.RECAPTCHA_PUBLIC_KEY = os.getenv('RECAPTCHA_PUBLIC_KEY')
+        Config.RECAPTCHA_PRIVATE_KEY = os.getenv('RECAPTCHA_PRIVATE_KEY')
+        Config.GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
+        Config.GITHUB_URL = os.getenv('GITHUB_URL')
+        Config.PA_TOKEN = os.getenv('PA_TOKEN')
+        Config.PA_RELOAD = os.getenv('PA_RELOAD')
