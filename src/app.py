@@ -19,7 +19,7 @@ def webhook():
         origin.pull()
     except Exception as e:
         return e
-    pa = PythonAnywhere(app.config['pa_token'])
+    pa = PythonAnywhere(app.config['PA_TOKEN'])
     pa.post(config['pa_reload'])
     return 'Updated app successfully.', 200
 
@@ -34,8 +34,19 @@ def about():
     
 @app.route("/skills")
 def skills():
+    github_query = '''{ user(login: "joshguarino") {pinnedItems(first: 6, types: REPOSITORY) {
+                            nodes {
+                                ... on Repository {
+                                    name
+                                    url
+                                    description
+                                    }
+                                }
+                            }
+                        }
+                    }'''
     github = GraphQL(token=app.config['GITHUB_TOKEN'], url=app.config['GITHUB_URL'])
-    data = github.post(app.config['GITHUB_QUERY'])
+    data = github.post(github_query)
     repos = data['data']['user']['pinnedItems']['nodes']
     repo1 = repos[0:3]
     repo2 = repos[3:6]
