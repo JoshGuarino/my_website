@@ -14,11 +14,8 @@ mail = Mail(app)
 @app.route("/update", methods=['POST'])
 def webhook():
     repo = git.Repo('/home/joshguarino/mysite/my_website')
-    try:
-        origin = repo.remotes.origin
-        origin.pull()
-    except Exception as e:
-        return e
+    origin = repo.remotes.origin
+    origin.pull()
     pa = PythonAnywhere(app.config['PA_TOKEN'])
     pa.post(config['pa_reload'])
     return 'Updated app successfully.', 200
