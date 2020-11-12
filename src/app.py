@@ -3,11 +3,25 @@ from forms import ContactForm
 from flask_mail import Mail, Message
 from config import Config
 from graphql import GraphQL
+from pythonanywhere import PythonAnywhere
+import git
 
 app = Flask(__name__)
 Config.get_config()
 app.config.from_object(Config)
 mail = Mail(app)
+
+@app.route("/update", methods=['POST'])
+def webhook():
+    repo = git.Repo('/home/joshguarino/mysite')
+    try:
+        origin = repo.remotes.origin
+        origin.pull()
+    except Exception as e:
+        return e
+    pa = PythonAnywhere(app.config['pa_token'])
+    pa.post(config['pa_reload'])
+    return 'Updated app successfully.', 200
 
 @app.route("/")
 @app.route("/index")
@@ -47,6 +61,10 @@ def contact():
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('error.html', title="Error", the_error="404 Not Found", message="Sorry! The page you requested doesn't exist!"), 404
+
+@app.errorhandler(405)
+def page_not_found(e):
+    return render_template('error.html', title="Error", the_error="405 Method Not Allowed", message="Sorry! Your not allowed to do that!"), 404
 
 @app.errorhandler(500)
 def internal_server_error(e):
