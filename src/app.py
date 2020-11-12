@@ -17,7 +17,7 @@ def webhook():
     origin = repo.remotes.origin
     origin.pull()
     pa = PythonAnywhere(app.config['PA_TOKEN'])
-    pa.post(app.config['pa_reload'])
+    pa.post(app.config['PA_RELOAD'])
     return 'Updated app successfully.', 200
 
 @app.route("/")
