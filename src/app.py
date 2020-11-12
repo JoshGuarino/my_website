@@ -13,7 +13,7 @@ mail = Mail(app)
 
 @app.route("/update", methods=['POST'])
 def webhook():
-    repo = git.Repo('/home/joshguarino/mysite')
+    repo = git.Repo('/home/joshguarino/mysite/my_website')
     try:
         origin = repo.remotes.origin
         origin.pull()
