@@ -27,3 +27,4 @@ class Config(object):
         Config.GITHUB_URL = os.getenv('GITHUB_URL')
         Config.PA_TOKEN = os.getenv('PA_TOKEN')
         Config.PA_RELOAD = os.getenv('PA_RELOAD')
+        Config.WEBHOOK_SECRET = os.getenv('WEBHOOK_SECRET')

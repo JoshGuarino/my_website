@@ -5,22 +5,30 @@ from config import Config
 from graphql import GraphQL
 from pythonanywhere import PythonAnywhere
 import git
+import hmac
+import hashlib
 
 app = Flask(__name__)
 Config.get_config()
 app.config.from_object(Config)
 mail = Mail(app)
 
+def verify_signature(request):
+    received_sign = request.headers.get('X-Hub-Signature').split('sha1=')[-1].strip()
+    secret = app.config['WEBOOK_SECRET'].encode()
+    expected_sign = HMAC(key=secret, msg=request.data, digestmod=sha1).hexdigest()
+    return compare_digest(received_sign, expected_sign)
+
 @app.route("/update", methods=['POST'])
 def webhook():
         if request.method == 'POST':
-            repo = git.Repo('~/my_website')
-            origin = repo.remotes.origin
-            # repo.create_head('master', origin.refs.master).set_tracking_branch(origin.refs.master).checkout()
-            origin.pull()
-            return '', 200
-        else:
-            return '', 400
+            if verify_signature(request):
+                repo = git.Repo('~/my_website')
+                origin = repo.remotes.origin
+                origin.pull()
+                return 'Successfully updated.', 200
+            return 'Forbidden', 403
+        return 'Bad Request', 400
 
 @app.route("/")
 @app.route("/index")
@@ -82,4 +90,3 @@ def internal_server_error(e):
 
 if __name__ == '__main__':
     app.run()
-
