@@ -13,12 +13,14 @@ mail = Mail(app)
 
 @app.route("/update", methods=['POST'])
 def webhook():
-    repo = git.Repo('/home/joshguarino/my_website')
-    origin = repo.remotes.origin
-    origin.pull()
-    pa = PythonAnywhere(app.config['PA_TOKEN'])
-    pa.post(app.config['PA_RELOAD'])
-    return 'Updated app successfully.', 200
+        if request.method == 'POST':
+            repo = git.Repo('~/my_website')
+            origin = repo.remotes.origin
+            # repo.create_head('master', origin.refs.master).set_tracking_branch(origin.refs.master).checkout()
+            origin.pull()
+            return '', 200
+        else:
+            return '', 400
 
 @app.route("/")
 @app.route("/index")
