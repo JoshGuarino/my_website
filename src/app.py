@@ -14,10 +14,12 @@ app.config.from_object(Config)
 mail = Mail(app)
 
 def verify_signature(request):
-    received_sign = request.headers.get('X-Hub-Signature').split('sha1=')[-1].strip()
-    secret = app.config['WEBOOK_SECRET'].encode()
-    expected_sign = HMAC(key=secret, msg=request.data, digestmod=sha1).hexdigest()
-    return compare_digest(received_sign, expected_sign)
+    key = bytes(app.config['WEBHOOK_SECRET'], 'utf-8')
+    expected_signature = hmac.new(key=key, msg=request.data, digestmod=hashlib.sha1).hexdigest()
+    incoming_signature = request.headers.get('X-Hub-Signature').split('sha1=')[-1].strip()
+    if not hmac.compare_digest(incoming_signature, expected_signature):
+        return False
+    return True
 
 @app.route("/update", methods=['POST'])
 def webhook():
