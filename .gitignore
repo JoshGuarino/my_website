@@ -1,4 +1,5 @@
 config.yaml
 config.sh
+config.ps1
 __pycache__
 run.py
