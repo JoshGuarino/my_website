@@ -1,4 +1,4 @@
-This is my website https://joshguarino.dev built using the python flask framework.
+This is my website https://joshguarino.pythonanywhere.com built using the python flask framework.
 
 New development features todo list for site:
 - connect to facebook api for photos in about section.
