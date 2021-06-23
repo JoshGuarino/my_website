@@ -1,5 +1,5 @@
 :root {
-    --primary: #984b43;
+    --primary: #973d33;
     --dark:black;
     --light:whitesmoke;   
   }
@@ -27,7 +27,7 @@ nav{
     position: relative;
     border-bottom:var(--primary) solid 3px;
     padding: .5vw;
-    opacity: .8;
+    opacity: .9;
     margin-bottom: 75px;
 }
 nav:hover{ border-bottom:var(--light) solid 3px; }
@@ -91,8 +91,8 @@ h5{ color: var(--light); }
 #josh{ height: 400px; width: 600px; }
 #check{ height: 300px; width: 300px; background-color: var(--primary); border: solid 3px var(--dark); border-radius: 10px; }
 #check:hover{ border: solid 3px var(--light); }
-#title{ padding-bottom: 20px; opacity: .8;}
-#para{ font-size: 20px; opacity: .8;}
+#title{ padding-bottom: 20px; opacity: .9;}
+#para{ font-size: 20px; opacity: .9;}
 #rowspace{ padding-bottom: 200px; }
 
 .copyright{ font-size: 12.5px; }
@@ -111,7 +111,7 @@ h5{ color: var(--light); }
     background-color: var(--primary);
     color: var(--light);
     border: var(--dark) 3px solid;
-    opacity: .7;
+    opacity: .9;
     border-radius: 10px;
     font-size: 75px;
 }
@@ -147,7 +147,7 @@ h5{ color: var(--light); }
 .fa-cogs{ border:none }
 .fa-envelope{ border:none }
 
-.flash { background-color: var(--primary); padding: 10px; width: 175px; color: var(--light); border-radius: 5px; border: solid 2px var(--primary); opacity: .8; }
+.flash { background-color: var(--primary); padding: 10px; width: 175px; color: var(--light); border-radius: 5px; border: solid 2px var(--primary); opacity: .9; }
 .flash:hover{ border: solid 2px var(--light); }
 
 .mapouter{ text-align: right; height: 400px; width: 400px;}
