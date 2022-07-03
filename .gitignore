@@ -1,6 +1,7 @@
 config.yaml
 config.sh
 config.ps1
+.env
 __pycache__
 run.py
 node_modules
