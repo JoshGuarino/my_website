@@ -1,7 +1,7 @@
 :root {
     --primary: #973d33;
     --dark:black;
-    --light:whitesmoke;   
+    --light:#f0f0f0;   
   }
 
 *:focus {
