@@ -9,12 +9,12 @@ verify_ssl = true
 flask = "*"
 flask_mail = "*"
 flask_wtf = "*"
-wtforms = "*"
 email-validator = "*"
 pyyaml = "*"
 requests = "*"
 gitpython = "*"
 python-dotenv = "*"
+wtforms = "*"
 
 [requires]
 python_version = "3.8"

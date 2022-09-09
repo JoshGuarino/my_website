@@ -41,6 +41,7 @@ def skills():
                     }'''
     github = GraphQL(token=app.config['GITHUB_TOKEN'], url=app.config['GITHUB_URL'])
     data = github.post(github_query)
+    print(data)
     repos = data['data']['user']['pinnedItems']['nodes']
     repo1 = repos[0:3]
     repo2 = repos[3:6]
@@ -93,4 +94,4 @@ def internal_server_error(e):
     return render_template('error.html', title="Error", the_error="500 Internal Server Error", message="Sorry! My website is experiencing difficulties..."), 500
 
 if __name__ == '__main__':
-    app.run(host="localhost", port=3000)
+    app.run(host="localhost", port=3001)
